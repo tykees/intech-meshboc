@@ -8,12 +8,12 @@
   width: 100%;
   align-items: center;
   padding: 0.5rem;
-  color: #d8d2d2;
+  color: #120f0f;
   font-family: 'Poppins';
-  background: #080808;
+  background: #fff;
   /* background: #0f1b2a; */
   z-index: 1;
-  border-bottom: 1px solid #313232;
+  /* border-bottom: 1px solid #fefefe; */
 }
 
 
@@ -28,7 +28,7 @@
 
 .links {
     text-decoration: none;
-    color: #fdfafa;
+    color: #000000;
   /* color: #0f1b2a; */
   font-size: 14px;
 }
@@ -132,7 +132,7 @@
 }
 
 .btns {
-  background-color: #30fa56;
+  background-color: #1cddd7;
   border-radius: 50px;
   width: 250px;
   height: 70px;

@@ -1,9 +1,14 @@
 .hero {
-    background-image: url('../../../../public/nav.png');
+    /* background-image: url('../../../../public/nav.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
     padding-top: 60px;
-    background: #080808;
+    background-image: linear-gradient(to right bottom, #242145, #23446f, #056a95, #0092b3, #06bbc8); */
+    background-color: #fff;
+}
+
+.bg-trans {
+    background-color: #7c58fd;
 }

@@ -2,10 +2,12 @@
 import { UserButton, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import Cards from "./components/Cards";
 import Hero from "./components/Hero/Hero";
-import Services from "./components/Services";
-import Started from "./components/Started";
+import Companies from "./components/Companies";
+import Courses from "./components/Courses";
+import Instructor from "./components/Instructor";
+import { EmblaCarousel } from "./components/EmblaCarousel";
+import Subscribe from "./components/Subscribe";
 
 
 export default function Home() {
@@ -24,9 +26,11 @@ export default function Home() {
     <div>
      <UserButton afterSignOutUrl="/sign-in" />
      <Hero/>
-     <Services/>
-     <Cards/>
-     <Started/>
+     <Companies/>
+     <Courses/>
+     <Instructor/>
+     <EmblaCarousel/>
+     <Subscribe/>
     </div>
   );
 }

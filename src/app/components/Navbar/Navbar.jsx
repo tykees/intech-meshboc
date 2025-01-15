@@ -51,7 +51,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         <Link href={'/'} className="links w-[50px]">
-          <Image className='w-[140px]' src="/newtouse.png" width={200} height={200} alt="" />
+          <Image className='w-[60px]' src="/meshboc1.png" width={200} height={200} alt="" />
         </Link>
       </div>
         {/* New fix */}
@@ -74,24 +74,39 @@ const Navbar = () => {
           </li>
           <li>
           <Link href={'/website'} className={`links `}>
-              BUILD
+              COURSES
             </Link>
           </li>
           <li>
             <Link href={'/adsbuckets'} className={`links `} >
-              BUCKET
+              CLASSROOM
             </Link>
           </li>
           <li>
             <Link href={'/how'} className={`links `} >
-              HOW IT WORKS
+              RESOURCES
+            </Link>
+          </li>
+          <li>
+            <Link href={'/how'} className={`links `} >
+              REVIEWS
+            </Link>
+          </li>
+          <li>
+            <Link href={'/how'} className={`links `} >
+              BLOGS
+            </Link>
+          </li>
+          <li>
+            <Link href={'/how'} className={`links `} >
+              CONTACT
             </Link>
           </li>
           {
             user ? 
             <li>
             <Link href={'/profile'} className={`profile `} >
-              PROFILE
+              DASHBOARD
             </Link>
           </li>
           :
@@ -124,7 +139,7 @@ const Navbar = () => {
               <li>
               <Link href={'/profile'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <IoHome /> 
-              Profile
+              DASHBOARD
               </Link>
             </li>
             :
@@ -138,19 +153,37 @@ const Navbar = () => {
             <li>
               <Link href={'/website'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <BsRocketTakeoff /> 
-              BUILD
+              COURSES
               </Link>
             </li>
             <li>
               <Link href={'/adsbuckets'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <GrDomain /> 
-              BUCKETS
+              CLASSROOM
               </Link>
             </li>
             <li>
               <Link href={'/how'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <GrDomain /> 
-              HOW IT WORKS
+              RESOURCES
+              </Link>
+            </li>
+            <li>
+              <Link href={'/how'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <GrDomain /> 
+              REVIEWS
+              </Link>
+            </li>
+            <li>
+              <Link href={'/how'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <GrDomain /> 
+              BLOGS
+              </Link>
+            </li>
+            <li>
+              <Link href={'/how'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <GrDomain /> 
+              CONTACT
               </Link>
             </li>
           </ul>
@@ -161,7 +194,7 @@ const Navbar = () => {
         ?
         <UserButton/>
         :
-      <Link href={"/sign-up"}><Button variant="outline" className="text-black w-[150px] h-[50px] bg-primary">REGISTER</Button></Link> 
+      <Link href={"/sign-up"}><Button variant="outline" className="text-black border-black text-[16px] w-[150px] h-[50px]">ENROL</Button></Link> 
         }
       </div>
     </nav>
