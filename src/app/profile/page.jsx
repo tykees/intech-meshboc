@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import GlobalApi from '../_utils/GlobalApi';
 import { TiMessages } from "react-icons/ti";
 import { CgWebsite } from "react-icons/cg";
+import Calendar from '../components/Calender';
 
 
 
@@ -14,65 +15,61 @@ function Profile({}) {
 
   const { user } = useUser();
   console.log(user)
-  const [userEnrolledAds, setUserEnrolledAds] = useState([]);
+  const [userEnrolledCourses, setUserEnrolledCourses] = useState([]);
   useEffect(()=>{
-    user&&getYourAds();
+    user&&getYourCourses();
   },[user])
 
-  const getYourAds = ()=> {
-    GlobalApi.getUserAllAdsPlan(user?.primaryEmailAddress?.emailAddress).then(resp =>{
-      console.log(resp.useradsplans);
-      setUserEnrolledAds(resp.useradsplans)
+  const getYourCourses = ()=> {
+    GlobalApi.getCourses(user?.primaryEmailAddress?.emailAddress).then(resp =>{
+      console.log(resp);
+      setUserEnrolledCourses(resp.courses)
     })
   }
 
   return (
-    <div>
-        <div className='pt-30'>
-          <div className='bg-green-400 h-[400px]'></div>
-          <div className='mt-[-200px]'>
-          <div className='bg-white border m-auto  rounded-lg md:w-[700px] w-[350px] h-[550px]'>
-            <div className='flex justify-center items-center'>
-              <div className='flex justify-center  text-green-600 items-center gap-2 pl-6'>
-              <CgWebsite className='md:text-[25px] text-[16px]' />
-              <p className='md:text-[25px] text-[16px]'>Connect</p>
-                </div>
-              <Image className='m-auto border border-slate-50 mt-[-50px] rounded-full shadow-md' src={user?.imageUrl} width={150} height={150} alt="userImage"/>
-
-              <div className='flex justify-center  text-green-600 items-center gap-2 pr-6'>
-                <TiMessages className='md:text-[25px] text-[16px]' />
-                <p className='md:text-[25px] text-[16px]'>Message</p>
-              </div>
+    <div className='bg-primary'>
+        <div className='pt-40 container m-auto flex justify-center items-center gap-2 '>
+           <div className='border bg-white border-slate-600 w-[240px] h-[180px] p-5'>
+              <p className='text-right text-[10px] font-medium'>{user?.fullName}</p>
+              <Image className='m-auto' src={user?.imageUrl} width={130} height={130} alt="userImage"/>
+              <p className='text-center mt-[-30px] text-[20px] font-medium'>{user?.fullName} James</p>
             </div>
-              <h3 className='text-center md:text-[30px] text-[20px] font-medium'>{user?.fullName}</h3>
-              <h3 className='text-center text-green-400 text-[20px] font-medium'>{user?.username}</h3>
-             
-              <h3 className='text-center text-[20px] mt-10'>Ads Subscriptions</h3>
-              <div className='grid md:grid-cols-5 grid-cols-3 px-5 pt-5 items-center gap-3'>
-              
-              {
-                userEnrolledAds.map((item, index)=>(
+
+            <div className='border border-slate-600 w-[240px] h-[180px] p-5 '>
+            <p className=' text-[16px]'>ETS</p>
+            <p className='pt-20 text-[20px] font-medium'>{user?.fullName}</p>
+            </div>
+
+            <div className='border border-slate-600 w-[240px] h-[180px] p-5 '>
+            <p className=' text-[16px]'>Attendance</p>
+            <p className='pt-20 text-[20px] font-medium'>{user?.fullName}</p>
+            </div>
+
+            <div className='border border-slate-600 w-[240px] h-[180px] p-5 '>
+            <p className=' text-[16px]'>Rating</p>
+            <p className='pt-20 text-[20px] font-medium'>{user?.fullName}</p>
+            </div>
+
+            <div className='border border-slate-600 w-[240px] h-[180px] p-5 '>
+            {
+                userEnrolledCourses.map((item, index)=>(
                   <div key={index}>
-                    <div className='border bg-slate-100 text-slate-400 md:text-[16px] text-[12px] md:min-w-[110px] min-w-[50px] rounded-md text-center'>
+                    <div className=''>
                    {item.name}
+                   <Image src={item.image.url} width={100} height={100} alt='image'/>
                  </div>
                   </div>
                 ))
               }
-              </div>
-              <div className='flex justify-center items-center gap-10 mt-12'>
-              <Button variant="outline" className="text-black w-[150px] h-[50px]">Get a Site</Button>
-              <Button variant="outline" className="text-black w-[150px] h-[50px] bg-green-400">Support</Button>
-              </div>
-              <div className='flex justify-center items-center mt-20'>
-              <h3 className='text-center text-slate-300 text-[14px] font-medium pr-3'>Date of Registration:</h3>
-              <h3 className='text-center text-slate-300 text-[14px] font-medium'>{user?.createdAt.getDate()}-</h3>
-              <h3 className='text-center text-slate-300 text-[14px] font-medium'>{user?.createdAt.getMonth() + 1}-</h3> 
-              <h3 className='text-center text-slate-300 text-[14px] font-medium'>{user?.createdAt.getFullYear()}</h3> 
-              </div>
-          </div>
-          </div>
+            </div>
+            </div>
+
+
+        <div className='container mx-auto w-[1200px]'>
+        <Calendar/>
         </div>
+             
     </div>
   )
 }

@@ -73,13 +73,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-          <Link href={'/website'} className={`links `}>
+          <Link href={'/courses'} className={`links `}>
               COURSES
-            </Link>
-          </li>
-          <li>
-            <Link href={'/adsbuckets'} className={`links `} >
-              CLASSROOM
             </Link>
           </li>
           <li>
@@ -151,15 +146,9 @@ const Navbar = () => {
           </li>
             }
             <li>
-              <Link href={'/website'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <Link href={'/courses'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <BsRocketTakeoff /> 
               COURSES
-              </Link>
-            </li>
-            <li>
-              <Link href={'/adsbuckets'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
-              <GrDomain /> 
-              CLASSROOM
               </Link>
             </li>
             <li>

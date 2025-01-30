@@ -16,7 +16,7 @@ function Footer() {
                   <Image className='w-[60px] h-[60px] border-slate-300 border rounded-full p-2'  src={"/insta.gif"} width={100} height={100} alt='logo'/>
                   </div>
               </div>
-              <div className='flex justify-between gap-60 items-center'>
+              <div className='flex justify-between gap-40 items-center'>
                 <div>
                   <h2 className='text-[24px] font-medium'>Products</h2>
                   <ul>
