@@ -22,7 +22,7 @@ function Hero() {
                   <Link href={"/website"}><Button variant="outline"  className="text-secondary border border-secondary w-[150px] h-[50px]">LEARN MORE</Button></Link>  :
                   <Link href={"/sign-up"}><Button variant="outline"  className="text-secondary border border-secondary w-[150px] h-[50px]">GET STARTED</Button></Link> 
                 }
-             <Link href={"/"}> <Button radius="full" variant="soft" className="text-primary w-[150px] h-[50px] bg-secondary">JOIN NOW <span><Image className='bg-primary rounded-full p-2 ml-5' src={"/arrow.gif"} width={50} height={50}></Image></span> </Button></Link>
+             <Link href={"/"}> <Button radius="full" variant="soft" className="text-primary w-[150px] h-[50px] bg-secondary">REGISTER <span><Image className='bg-primary rounded-full p-2 ml-5' src={"/arrow.gif"} width={50} height={50}></Image></span> </Button></Link>
               </div>
               <div className='flex items-center gap-10 pt-16 text-white'>
                   <div>

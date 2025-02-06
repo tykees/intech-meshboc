@@ -9,7 +9,9 @@ const Calendar = () => {
   ];
 
   return (
-    <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" events={events} />
+    <div className='text-secondary'>       
+       <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" events={events} />
+    </div>
   );
 };
 

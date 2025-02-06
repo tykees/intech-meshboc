@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-// import AdPlans from '../_components/AdPlans';
 import { FaCheckCircle } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
@@ -22,24 +21,11 @@ const Page = () => {
         GlobalApi.createCourse(email, name).then(resp => {
           console.log(resp);
 
-          if (resp?.createUserCourseRequest?.name === "One Page Sales/Contact") {
+          if (resp?.createCourse?.name === "Full-Stack Development") {
             toast("You have successfully Enrolled", {
               description: "Happy Learning!",
             });
-            router.push('/onepage');
-          } else if(resp?.createUserCourseRequest?.name === "6 Pages Standard") {
-
-            toast("You have successfully Enrolled", {
-              description: "Happy Learning!",
-            });
-
-            router.push('/sixpage');
-          } else if(resp?.createUserCourseRequest?.name === "Extendable") {
-            toast("You have Enrolled", {
-              description: "Happy Learning!",
-            });
-
-            router.push('/extendable');
+            router.push('/confirm');
           }
         }).catch(error => {
           toast.error("Enrollment failed. Please try again later.");
@@ -48,129 +34,51 @@ const Page = () => {
         
       };
   return (
-    <div className='pt-40 web_page bg-primary pb-20 text-center'>
-        <h2 className='text-slate-400'>Cheapest Way to get your business online.</h2>
-        <h1 className='text-secondary text-[50px] font-extrabold'>Over 50% OFF</h1>
-        <p className='text-slate-400'>On All Responsive Website and UI designs</p>
-        <p className='text-slate-400'>Mobile + Desktop + Tablet</p>
+    <div className='pt-10 web_page pb-20 bg-primary text-center'>
+            <div className='bg-white cour-border'>
+          <h2 className='font-bold text-seconary text-[80px]'>Learn from the Professional <br/> <span className=''>Dev</span></h2>
         <div className='flex justify-center items-center'>
-            <Image src='/pngegg.png' width={500} height={500}/>
+          <p className='w-[200px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus?</p>
+            <div className='bg-slate-200 rounded-t-full mb-0 w-[700px]'>
+            <Image className='mt-[-60px] w-[800px]' src='/Michy.png' width={500} height={500}/>
+            </div>
+            <p className='w-[200px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, expedita.</p>
         </div>
-        {/* <AdPlans/> */}
-        <div className='grid md:grid-cols-4 grid-cols-1 place-items-center justify-center items-center'>
-            <div className='border mt-10 w-[300px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary h-[480px] shadow-md rounded-br-3xl rounded-tl-3xl'>
-            <p className='text-[15px] text-slate-300 text-left'>Complete JavaScript Course</p>
+        </div>
+
+        {/* <p>Courses and Plans</p>
+        <h2>If you need a more flexible plan, get in touch.</h2> */}
+        <div className='bg-primary flex justify-around items-center'>
+              <div className='w-[400px] text-left'>
+                <h2 className='text-[40px] font-bold leading-10 text-white'>Download the Course Curriculum</h2>
+                <p className='text-slate-300'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam natus sunt non omnis, nostrum id.</p>
+              </div>
+            <div className='border mt-10 w-[400px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary bg-secondary h-[300px] shadow-md rounded-2xl'>
+            <p className='text-[25px] text-black text-left'>Full Stack <span className='font-bold'>Development</span> </p>
                 <div className=''>
-                <h4 className='text-left text-slate-300 text-[48px] font-extrabold'>N40,000</h4>
-                <p className='text-left'>Duration: 2 Months</p>
+                <h4 className='text-left text-primary text-[48px] font-extrabold'>N100,000</h4>
+                <p className='text-left'>Duration: 16 Weeks</p>
                 </div>
                 <div className='mt'>
                   {
                     user&&isLoaded ?
-                    <Button variant="outline" className="text-slate-300 w-[100%] mt-5 h-[50px] text-[20px] border-secondary hover:bg-secondary" onClick={() => createUserCourse('One Page Sales/Contact')} >Get Started</Button>
+                    <Button variant="outline" className="text-primary w-[100%] mt-5 h-[50px] text-[20px] border-primary rounded-2xl hover:bg-secondary" onClick={() => createUserCourse('Full-Stack Development')} >Make Payment</Button>
                     :
-                    <Link href={"/sign-up"}> <Button variant="outline" className="text-slate-300  w-[100%] mt-5 h-[50px] text-[20px]  border-secondary hover:bg-secondary">Get Started</Button> </Link>  
+                    <Link href={"/sign-up"}> <Button variant="outline" className="text-slate-300  w-[100%] mt-5 h-[50px] text-[20px] rounded-2xl  border-secondary hover:bg-secondary">Apply Now</Button> </Link>  
                   }
                
                 </div>
                 <div className=' pt-4 text-slate-300 text-[15px] text-left'>
-                <ul>
+                {/* <ul>
                     <li className='flex items-center gap-2'><FaCheckCircle />1 Year Host Plan</li>
                     <li className='flex items-center gap-2'><FaCheckCircle />1 Year Domain</li>
                     <li className='flex items-center gap-2'><FaCheckCircle /> Managed by ScuttleAds</li>
                     <li className='flex items-center gap-2'><FaCheckCircle /> Shared Hosting</li>
                     <li className='flex items-center gap-2'><FaCheckCircle /> SEO</li>
                     <li className='flex items-center gap-2'><FaCheckCircle /> Customer Support</li>
-                </ul>
+                </ul> */}
                 </div>
-            </div>
-            <div className='border mt-10 w-[300px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary h-[480px] shadow-md rounded-br-3xl rounded-tl-3xl'>
-            <p className='text-slate-300 text-[15px] text-left'>Front End Development</p>
-                <div className=''>
-                <h4 className='text-left text-slate-300 text-[48px] font-extrabold'>N100,000</h4>
-                <p className='text-left'>Duration: 4 Months</p>
-                </div>
-                <div className='mt'>
-                  {
-                    user&&isLoaded? 
-                    <Button variant="outline" className="text-black border-none w-[100%] mt-5 h-[50px] text-[20px] bg-teal-400" onClick={() => createUserCourse('6 Pages Standard')}>Get Started</Button>
-                    :
-                    <Link href={"/sign-up"}> <Button variant="outline" className="text-black border-none w-[100%] mt-5 h-[50px] text-[20px] bg-teal-400">Get Started</Button> </Link>  
-                  }
-               
-                </div>
-                <div className=' pt-4 text-slate-300 text-[15px] text-left'>
-                <ul>
-                <li className='flex items-center gap-2'><FaCheckCircle />1 Year Host Plan</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle />1 Year Domain</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> WP Dashboard</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> WP Hosting</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> 4 Subdomains</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> 10 Business mail</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle />SEO</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> Manage by ScuttleAds/Owner</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> More Customer Support</li>
-                </ul>
-                </div>
-            </div>
-            <div className='border mt-10 w-[300px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary h-[480px] shadow-md rounded-br-3xl rounded-tl-3xl'>
-            <p className='text-slate-300 text-[15px] text-left'>Backend Development</p>
-                <div className=''>
-                <h4 className='text-left text-slate-300 text-[48px] font-extrabold'>#120,000</h4>
-                <p className='text-left'>Duration: 4 Months</p>
-                </div>
-                <div className='mt'>
-                  {
-                    user&&isLoaded?
-                    <Button variant="outline" className="text-black border-none w-[100%] mt-5 h-[50px] text-[20px] bg-green-400" onClick={() => createUserCourse('Extendable')}>Get Started</Button>
-                    :
-                    <Link href={"/sign-up"}> <Button variant="outline" className="text-black border-none w-[100%] mt-5 h-[50px] text-[20px] bg-green-400">Get Started</Button> </Link> 
-                  }
-               
-                </div>
-                <div className=' pt-4 text-slate-300 text-[15px] text-left'>
-                <ul>
-                <li className='flex items-center gap-2'><FaCheckCircle />1 Year Host Plan</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle />1 Year Domain</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> WP Dashboard</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> WP Hosting</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> 5 Subdomains</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> 10 Business mail</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle />SEO</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> Manage by ScuttleAds/Owner</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> Piority Customer Support</li>
-                </ul>
-                </div>
-            </div>
-            <div className='border mt-10 w-[300px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary h-[480px] shadow-md rounded-br-3xl rounded-tl-3xl'>
-            <p className='text-slate-300 text-[15px] text-left'>Full Stack Development</p>
-                <div className=''>
-                <h4 className='text-left text-slate-300 text-[48px] font-extrabold'>#200,000</h4>
-               <p className='text-left'>Duration: 6 Months</p>
-                </div>
-                <div className='mt'>
-                  {
-                    user&&isLoaded?
-                    <Button variant="outline" className="text-black border-none w-[100%] mt-5 h-[50px] text-[20px] bg-green-400" onClick={() => createUserCourse('Extendable')}>Get Started</Button>
-                    :
-                    <Link href={"/sign-up"}> <Button variant="outline" className="text-black border-none w-[100%] mt-5 h-[50px] text-[20px] bg-green-400">Get Started</Button> </Link> 
-                  }
-               
-                </div>
-                <div className=' pt-4 text-slate-300 text-[15px] text-left'>
-                <ul>
-                <li className='flex items-center gap-2'><FaCheckCircle />1 Year Host Plan</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle />1 Year Domain</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> WP Dashboard</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> WP Hosting</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> 5 Subdomains</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> 10 Business mail</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle />SEO</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> Manage by ScuttleAds/Owner</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> Piority Customer Support</li>
-                </ul>
-                </div>
-            </div>
+            </div>  
        </div>
     </div>
   )

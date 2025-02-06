@@ -1,4 +1,5 @@
 import { gql, request } from 'graphql-request'
+import { Qahiri } from 'next/font/google'
 
 const MASTER_URL ="https://eu-west-2.cdn.hygraph.com/content/" +process.env.NEXT_PUBLIC_HYGRAPH_API_KEY+ "/master"
 
@@ -66,6 +67,31 @@ const getCourses = async (email) => {
 }
 
 
+const getAttendance = async (email) => {
+  const query = gql`
+  query MyQuery2 {
+  yourAttendances(where: {userEmail: "`+email+`"}) {
+    attendance
+  }
+}
+  `
+  const result = await request(MASTER_URL, query)
+  return result;
+}
+
+const getGrade = async(email)=> {
+  const query = gql`
+  query MyQuery {
+  yourGrades(where: {userEmail: "`+email+`"}) {
+    grade
+  }
+}
+  `
+  const result = await request(MASTER_URL, query)
+  return result;
+}
+
+
 
 // const getUserCourses=async(email)=>{
 //   const query=gql`
@@ -85,7 +111,9 @@ const getCourses = async (email) => {
 
 export default {
   createCourse,
-  getCourses
+  getCourses,
+  getAttendance,
+  getGrade
 }
 
 
