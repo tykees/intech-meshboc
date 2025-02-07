@@ -43,7 +43,7 @@ function Hero() {
                 </div>
               </div>
               <div>
-              <Image className='m-auto pt-[50px]' src="/chock.png" width={500} height={500} alt='computer'/>
+              <Image className='m-auto w-[600px] pt-[50px]' src="/homegirl2.png" width={500} height={500} alt='computer'/>
             </div>
             </div>
            

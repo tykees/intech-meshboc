@@ -5,16 +5,16 @@ import Link from 'next/link';
 
 function Payment() {
   return (
-    <div className='pt-20 bg-black'>
+    <div className='pt-20 bg-slate-100 rounded-b-full'>
         <div className='m-auto w-[350px] h-[600px]'>
-            <div className='bg-primary pt-10 rounded-3xl h-[300px]'>
+            <div className='bg-primary pt-10 rounded-3xl h-[270px]'>
                 <Image className='m-auto border-4 border-white rounded-full' src={'/mark.gif'} width={100} height={100} alt="mark"/>
-                <p className='text-center text-[25px] pt-5'>Payment Successful</p>
+                <p className='text-center text-[25px] font-medium text-white pt-5'>Payment Successful</p>
             </div>
             <div className=''>
-                <p className='text-center text-slate-200'>Wish to log your payment on our support desk?</p>
+                <p className='text-center text-slate-500'>Wish to log your payment on our support desk?</p>
                 <p className='text-center text-green-400 underline'><Link href={"/"}>Log here</Link></p>
-                <Button variant="outline" className="text-black mt-4 border w-[350px] text-[16px] h-[50px] bg-primary">Back to Profile</Button>
+                <Button variant="outline" className="text-white mt-4 border border-white rounded-2xl w-[350px] text-[23px] h-[50px] bg-primary">Back to Profile</Button>
             </div>
         </div>
     </div>
