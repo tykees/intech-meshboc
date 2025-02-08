@@ -20,7 +20,7 @@ function Subscribe() {
               </div>
               </div>
               <div>
-              <Image className='m-auto pt-[50px]' src="/prof3.png" width={580} height={580} alt='computer'/>
+              <Image className='m-auto pt-[20px]' src="/prof3.png" width={550} height={550} alt='computer'/>
             </div>
             </div>
            

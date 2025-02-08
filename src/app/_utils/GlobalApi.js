@@ -1,41 +1,7 @@
 import { gql, request } from 'graphql-request'
-import { Qahiri } from 'next/font/google'
 
 const MASTER_URL ="https://eu-west-2.cdn.hygraph.com/content/" +process.env.NEXT_PUBLIC_HYGRAPH_API_KEY+ "/master"
 
-// const getAllAdsPlan=async()=>{
-//     const query=gql`
-//     query MyQuery {
-//       adsplans {
-//         cost
-//         id
-//         name
-//       }
-//     }
-//     `
-//     const result=await request(MASTER_URL, query)
-//     return result;
-// }
-
-// const createCourse = async (email, name) => {
-//   const query = gql`
-//     mutation CreateUserCourseRequest($email: String!, $name: String!) {
-//       createUserCourseRequest(data: {name: $name, userEmail: $email}) {
-//         id
-//         name
-//         userEmail
-//       }
-//     }
-//   `;
-
-//   const variables = {
-//     email: email,
-//     name: name
-//   };
-
-//   const result = await request(MASTER_URL, query, variables);
-//   return result;
-// };
 
 const createCourse = async (email, name) => {
   const query = gql`
@@ -91,29 +57,49 @@ const getGrade = async(email)=> {
   return result;
 }
 
+const getAllBlogs = async()=> {
+  const query = gql`
+ query MyQuery {
+  blogs(where: {}) {
+    blogTitle
+    blogContent
+    imageOne {
+      url
+    }
+    slug
+  }
+}
+  `
+  const result = await request(MASTER_URL, query)
+  return result;
+}
 
 
-// const getUserCourses=async(email)=>{
-//   const query=gql`
-//   query MyQuery {
-//     userCourses(where: {userEmail: "`+email+`"}) {
-//       userEmail
-//       id
-//       name
-//     }
-//   }
-//   `
-//   const result=await request(MASTER_URL, query)
-//   return result;
-// }
-
+const getBlogBySlug = async(blogId) =>{
+  const query=gql`
+query MyQuery {
+  blog(where: {slug: "`+blogId+`"}) {
+    blogTitle
+    blogContent
+    imageOne {
+      url
+    }
+    slug
+  }
+}
+  `
+  const result = await request(MASTER_URL, query)
+  return request
+}
 
 
 export default {
   createCourse,
   getCourses,
   getAttendance,
-  getGrade
+  getGrade,
+  getAllBlogs,
+  getBlogBySlug
 }
 
 
