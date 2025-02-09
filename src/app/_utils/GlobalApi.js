@@ -75,22 +75,27 @@ const getAllBlogs = async()=> {
 }
 
 
-const getBlogBySlug = async(blogId) =>{
-  const query=gql`
-query MyQuery {
-  blog(where: {slug: "`+blogId+`"}) {
-    blogTitle
-    blogContent
-    imageOne {
-      url
+const getBlogBySlug = async (blogId) => {
+  const query = gql`
+    query MyQuery($slug: String!) {
+      blog(where: {slug: $slug}) {
+        blogTitle
+        blogContent
+        imageOne {
+          url
+        }
+        slug
+      }
     }
-    slug
+  `;
+  try {
+    const result = await request(MASTER_URL, query, { slug: blogId });
+    return result.blog;  // ✅ Returning the actual blog data
+  } catch (error) {
+    console.error("Error fetching blog:", error);
+    return null;
   }
-}
-  `
-  const result = await request(MASTER_URL, query)
-  return request
-}
+};
 
 
 export default {
