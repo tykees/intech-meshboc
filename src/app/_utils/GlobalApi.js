@@ -17,6 +17,18 @@ const createCourse = async (email, name) => {
    return result; 
 }
 
+const createSubMail = async (email) =>{
+  const query = gql`
+  mutation MyMutation {
+  createEmailSubscription(data: {subscribedMail: "`+email+`"}) {
+    subscribedMail
+  }
+}
+  `
+  const result = await request(MASTER_URL,query)
+  return result
+}
+
 const getCourses = async (email) => {
   const query = gql`
   query MyQuery {
@@ -104,7 +116,8 @@ export default {
   getAttendance,
   getGrade,
   getAllBlogs,
-  getBlogBySlug
+  getBlogBySlug,
+  createSubMail
 }
 
 
