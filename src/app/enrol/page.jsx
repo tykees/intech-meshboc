@@ -36,19 +36,19 @@ const Page = () => {
   return (
     <div className='pt-10 web_page pb-20 bg-primary text-center'>
             <div className='bg-white cour-border'>
-          <h2 className='font-bold text-seconary leading-tight text-[80px]'>Learn from the <span className='text-secondary'>Professional</span><br/><span className=''>Developers</span></h2>
+          <h2 className='font-bold leading-tight pt-10 md:text-[80px] text-[40px]'>Learn from the <span className='text-secondary'>Professional</span><br/><span className=''>Developers</span></h2>
         <div className='flex justify-center items-center'>
-          <p className='w-[250px] text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus?</p>
-            <div className='bg-slate-100 rounded-t-full mb-0 w-[700px]'>
+          <p className='w-[250px] text-left text-[0] md:text-[16px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus?</p>
+            <div className='md:bg-slate-100 rounded-t-full mb-0 w-[700px]'>
             <Image className='mt-[-100px] w-[600px]' src='/Michy2.png' width={500} height={500}/>
             </div>
-            <p className='w-[250px] text-right'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, expedita.</p>
+            <p className='w-[250px] text-right text-[0] md:text-[16px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, expedita.</p>
         </div>
         </div>
 
         {/* <p>Courses and Plans</p>
         <h2>If you need a more flexible plan, get in touch.</h2> */}
-        <div className='bg-primary flex justify-around items-center'>
+        <div className='bg-primary p-4 flex justify-around items-center flex-wrap'>
               <div className='w-[400px] text-left'>
                 <h2 className='text-[40px] font-bold leading-10 text-white mt-3'>Download the Course Curriculum</h2>
                 <p className='text-slate-300'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam natus sunt non omnis, nostrum id.</p>

@@ -15,3 +15,16 @@
   .cour-border {
     border-radius:0px 0px 180px 180px;
   }
+
+  .prose h1 {
+    font-size: 2rem; /* Ensure h1 is large */
+    font-weight: bold;
+}
+
+.prose p {
+    margin-bottom: 1rem; /* Ensure paragraph spacing */
+}
+
+.prose ul {
+    list-style-type: disc; /* Ensure lists display properly */
+}

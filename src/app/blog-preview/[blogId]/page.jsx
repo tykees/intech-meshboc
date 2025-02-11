@@ -1,6 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import GlobalApi from "@/app/_utils/GlobalApi";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 function Page({ params }) {
     const [blogInfo, setBlogInfo] = useState(null);
@@ -30,7 +33,10 @@ function Page({ params }) {
                             className="w-full my-4 rounded-lg"
                         />
                     )}
-                    <p className="text-lg">{blogInfo.blogContent}</p>
+                    
+                    <Markdown className="prose lg:prose-lg max-w-full"
+    remarkPlugins={[remarkGfm]} 
+    rehypePlugins={[rehypeRaw]}>{blogInfo.blogContent}</Markdown>
                 </div>
             ) : (
                 <p className="text-center">Loading blog...</p>

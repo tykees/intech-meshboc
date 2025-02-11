@@ -54,11 +54,11 @@ function Profile({}) {
 
   return (
     <div className='bg-black pt-20'>
-      <h1 className='pl-32 text-[30px] pt-10 text-slate-200 font-medium'>Student Overview</h1>
-        <div className='flex justify-around'>
-        <div className='grid grid-cols-3 items-center gap-2 border border-slate-700 bg-black w-[1000px] p-8 rounded-xl'>
-           <div className=''>
-              <Image className='w-[100px] h-[100px] shadow-2xl rounded-full' src={user?.imageUrl} width={100} height={100} alt="userImage"/>
+      <h1 className='md:pl-32 text-[30px] text-center pt-10 text-slate-200 font-medium'>Student Overview</h1>
+        <div className='flex justify-around flex-wrap'>
+        <div className='grid md:grid-cols-3 grid-cols-1 items-center gap-2 border border-slate-700 bg-black w-[1000px] p-8 rounded-xl'>
+           <div className=' flex-col justify-center items-center'>
+              <Image className='md:w-[100px] md:h-[100px] w-[200px] h-[200px] shadow-2xl rounded-full' src={user?.imageUrl} width={100} height={100} alt="userImage"/>
               <p className='text-left text-[16px] text-slate-300 font-medium'>{user?.fullName}</p>
             </div>
             <div className='flex items-center gap-3'>
@@ -144,8 +144,8 @@ function Profile({}) {
               <Image className='w-[350px]' src={"/prof2.png"} width={300} height={300} alt='work'/>
             </div>
         </div>
-        <div className='flex gap-40 bg-slate-200 mt-10'>
-        <div className='ml-28 w-[1000px] bg-white rounded-xl mt-10 p-5 mb-10'>
+        <div className='flex flex-wrap gap-40 bg-slate-200 mt-10'>
+        <div className='md:ml-28 md:w-[1000px] h-[100%] bg-white rounded-xl mt-10 p-5 mb-10'>
         <Calendar/>
         </div> 
         <div className='mt-10 w-[400px] h-[400px] bg-white rounded-xl pt-5 px-5'>

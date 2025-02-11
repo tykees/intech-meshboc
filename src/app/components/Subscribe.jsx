@@ -42,22 +42,22 @@ function Subscribe() {
   };
 
   return (
-    <div className="md:px-8 px-8">
+    <div className="md:px-8">
       <div className="pt-20">
-        <div className="flex justify-around items-start py-10 bg-trans rounded-2xl h-[600px] shadow">
+        <div className="flex justify-around bg-primary items-start py-10 rounded-2xl md:h-[600px] h-[100%] flex-wrap shadow">
           <div>
-            <p className="text-[80px] mt-12 text-start text-white leading-none font-bold">
+            <p className="md:text-[80px] text-[30px] mt-12 text-start text-white leading-none font-bold">
               Subscribe for fresh <br />
-              <span className="md:text-[80px] text-[40px] font-bold">
+              <span className="md:text-[80px] text-[30px] font-bold">
                 content and updates
               </span>
             </p>
-            <p className="w-[500px] text-start pt-5 block mt-5 text-white">
+            <p className="md:w-[500px] w-[320px] text-start pt-5 block mt-5 text-white">
               We offer services that navigate your business to the next phase of sales and create a stable online presence without breaking the bank. Your visibility is certain with us.
             </p>
             <div className="mt-10">
               <input
-                className="w-[600px] h-[62px] rounded-full px-5 text-black border-2 border-gray-300 focus:border-secondary outline-none"
+                className="md:w-[600px] w-[320px] h-[62px] rounded-full px-5 text-black border-2 border-gray-300 focus:border-secondary outline-none"
                 type="email"
                 placeholder="Enter Your Email"
                 value={email}

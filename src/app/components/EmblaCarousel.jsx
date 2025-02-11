@@ -9,7 +9,7 @@ export function EmblaCarousel() {
 
   return (
     <div className="embla" ref={emblaRef}>
-      <div className="embla__container w-[700px] container mx-auto my-20 py-20">
+      <div className="embla__container md:w-[700px] w-[400px] container mx-auto my-20 py-20">
         <div className="embla__slide flex justify-center rounded-xl border-slate-200 border-2 items-center shadow-lg">
           <div className='py-10 px-10'>
           <Image src={"/diva.png"} width={200}  height={200} alt='image' />
