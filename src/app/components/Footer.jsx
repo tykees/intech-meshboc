@@ -16,38 +16,30 @@ function Footer() {
                   <Image className='w-[60px] h-[60px] border-slate-300 border rounded-full p-2'  src={"/insta.gif"} width={100} height={100} alt='logo'/>
                   </div>
               </div>
-              <div className='flex justify-between gap-40 items-center flex-wrap'>
+              <div className='flex justify-between gap-40 items-start flex-wrap'>
                 <div>
-                  <h2 className='text-[24px] font-medium'>Products</h2>
+                  <h2 className='text-[24px] font-medium'>About</h2>
                   <ul>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
+                    <li>Contact us</li>
+                    <li>About us</li>
                   </ul>
                 </div>
                 <div>
-                  <h2 className='text-[24px] font-medium'>Information</h2>
+                  <h2 className='text-[24px] font-medium'>Companies</h2>
                   <ul>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
+                    <li>Hire our Grads</li>
+                    <li>Collaborate with us</li>
                   </ul>
                 </div>
                 <div>
-                  <h2 className='text-[24px] font-medium'>Contact Us</h2>
+                  <h2 className='text-[24px] font-medium'>Resources</h2>
                   <ul>
+                    <li>Privacy policy</li>
+                    <li>Terms of service</li>
+                    <li>FAQS</li>
                     <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
-                    <li>Design</li>
+                    <li>Our Blog</li>
+                    <li>Scholarships</li>
                   </ul>
                 </div>
               </div>

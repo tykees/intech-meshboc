@@ -118,7 +118,7 @@ const Navbar = () => {
       {isMobile && (
         <div className={`mobile-menu ${showMenu ? 'show' : ''}`}>
           <button className="close-button" onClick={closeMobileMenu}>
-          <IoCloseSharp className='text-white' />
+          <IoCloseSharp className='text-gray-600' />
           </button>
           <ul>
           <li className=''>

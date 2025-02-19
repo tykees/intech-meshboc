@@ -7,6 +7,7 @@ import { useUser } from '@clerk/nextjs';
 function Hero() {
    const {user, isLoaded} = useUser();
 
+
   return (
     <div className='md:px-8'>
         <div className='pt-20'>
