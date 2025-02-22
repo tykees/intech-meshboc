@@ -17,6 +17,17 @@ function Footer() {
                   </div>
               </div>
               <div className='flex justify-between gap-40 items-start flex-wrap'>
+              <div>
+                  <h2 className='text-[24px] font-medium'>Resources</h2>
+                  <ul>
+                    <li>Privacy policy</li>
+                    <li>Terms of service</li>
+                    <li>FAQS</li>
+                    <li>Design</li>
+                    <li>Our Blog</li>
+                    <li>Scholarships</li>
+                  </ul>
+                </div>
                 <div>
                   <h2 className='text-[24px] font-medium'>About</h2>
                   <ul>
@@ -29,17 +40,6 @@ function Footer() {
                   <ul>
                     <li>Hire our Grads</li>
                     <li>Collaborate with us</li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 className='text-[24px] font-medium'>Resources</h2>
-                  <ul>
-                    <li>Privacy policy</li>
-                    <li>Terms of service</li>
-                    <li>FAQS</li>
-                    <li>Design</li>
-                    <li>Our Blog</li>
-                    <li>Scholarships</li>
                   </ul>
                 </div>
               </div>
