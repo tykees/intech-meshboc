@@ -5,11 +5,15 @@ import { IoHome } from "react-icons/io5";
 import { BsRocketTakeoff } from "react-icons/bs";
 import { GrDomain } from "react-icons/gr";
 import { IoCloseSharp } from "react-icons/io5";
+import { MdPermDeviceInformation } from "react-icons/md";
+import { SlLocationPin } from "react-icons/sl";
+import { GrArticle } from "react-icons/gr";
 import { Button } from "@/components/ui/button";
 import Image from 'next/image';
 import Link from 'next/link';
 import './navbar.css';
 import { UserButton, useUser } from '@clerk/nextjs';
+
 
 
 
@@ -79,18 +83,13 @@ const Navbar = () => {
           </li>
           <li>
             <Link href={'/how'} className={`links `} >
-              RESOURCES
+              ABOUT
             </Link>
           </li>
           <li>
-            <Link href={'/how'} className={`links `} >
-              REVIEWS
-            </Link>
-          </li>
-          <li>
-            <Link href={'/how'} className={`links `} >
+            <Link href={'/blogs'} className={`links `} >
               BLOGS
-            </Link>
+            </Link> 
           </li>
           <li>
             <Link href={'/how'} className={`links `} >
@@ -152,26 +151,20 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href={'/how'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
-              <GrDomain /> 
-              RESOURCES
+              <Link href={'/about'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <MdPermDeviceInformation />
+              ABOUT
               </Link>
             </li>
             <li>
-              <Link href={'/how'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
-              <GrDomain /> 
-              REVIEWS
-              </Link>
-            </li>
-            <li>
-              <Link href={'/how'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
-              <GrDomain /> 
+              <Link href={'/blogs'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <GrArticle /> 
               BLOGS
               </Link>
             </li>
             <li>
-              <Link href={'/how'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
-              <GrDomain /> 
+              <Link href={'/contact'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <SlLocationPin  /> 
               CONTACT
               </Link>
             </li>

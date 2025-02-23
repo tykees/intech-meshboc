@@ -24,7 +24,7 @@ export default function Page() {
         </h2>
 
         <p className="mt-4 leading-relaxed text-white/90">
-          Your business ultimate online solution.
+          
         </p>
       </div>
     </section>
