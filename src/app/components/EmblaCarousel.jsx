@@ -12,7 +12,7 @@ export function EmblaCarousel() {
       <div className="embla__container md:w-[700px] w-[500px] container mx-auto my-10 py-10">
         <div className="embla__slide flex justify-center rounded-xl border-slate-200 border-2 items-center shadow-lg">
           <div className='py-10 px-10'>
-          <Image src={"/diva.png"} width={200}  height={200} alt='image' />
+          <Image src={"/emma.png"} width={200}  height={200} alt='image' />
           <p className='w-[150px] text-center text-[16px] font-medium'>Emmanuel Raji</p>
           <p className='text-center text-[12px]'>Front-end Developer</p>
           </div>
@@ -21,7 +21,7 @@ export function EmblaCarousel() {
 
         <div className="embla__slide flex justify-center rounded-xl border-slate-200 border-2 items-center shadow-lg">
           <div className='py-10 px-10'>
-          <Image src={"/diva.png"} width={200}  height={200} alt='image' />
+          <Image  src={"/michael.png"} width={200}  height={200} alt='image' />
           <p className='w-[150px] text-center text-[16px] font-medium'>Michael Oche</p>
           <p className='text-center text-[12px]'>Front-end Developer</p>
           </div>

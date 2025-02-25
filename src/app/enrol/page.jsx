@@ -40,7 +40,7 @@ const Page = () => {
         <div className='flex justify-center items-center'>
           <p className='w-[250px] text-left text-[0] md:text-[16px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus?</p>
             <div className='md:bg-slate-100 rounded-t-full mb-0 w-[700px]'>
-            <Image className='mt-[-100px] w-[600px]' src='/Michy2.png' width={500} height={500}/>
+            <Image className='mt-[-100px] w-[600px]' src='/Michy2.png' width={500} height={500} alt='img'/>
             </div>
             <p className='w-[250px] text-right text-[0] md:text-[16px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, expedita.</p>
         </div>

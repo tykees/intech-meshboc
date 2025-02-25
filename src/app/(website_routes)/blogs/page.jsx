@@ -4,7 +4,7 @@ import GlobalApi from '@/app/_utils/GlobalApi';
 import BlogItem from '../_components/BlogItem';
 import Link from 'next/link';
 
-function page() {
+function Page() {
     const [getBlogs, setGetBlogs] = useState([]);
 
     useEffect(()=>{
@@ -37,4 +37,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

@@ -20,7 +20,7 @@ export default function Home() {
     else {
       isLoaded&&router.push("/")
     }
-  },[user])
+  },[user, isLoaded, router])
 
   return (
     <div>

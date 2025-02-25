@@ -18,10 +18,10 @@ function Hero() {
               <div className='flex justify-start pt-5	 text-center md:gap-8 gap-4 mt-5'>
                 {
                   user?
-                  <Link href={"/website"}><Button variant="outline"  className="text-secondary border border-secondary w-[150px] h-[50px]">LEARN MORE</Button></Link>  :
-                  <Link href={"/sign-up"}><Button variant="outline"  className="text-secondary border border-secondary w-[150px] h-[50px]">GET STARTED</Button></Link> 
+                  <Link href={"/website"}><Button variant="outline"  className="text-secondary border border-secondary w-[150px] h-[50px] hover:text-secondary">LEARN MORE</Button></Link>  :
+                  <Link href={"/sign-up"}><Button variant="outline"  className="text-secondary border border-secondary w-[150px] h-[50px] hover:text-secondary">GET STARTED</Button></Link> 
                 }
-             <Link href={"/"}> <Button radius="full" variant="soft" className="text-primary w-[150px] h-[50px] bg-secondary">REGISTER <span><Image className='bg-primary rounded-full p-2 ml-5' src={"/arrow.gif"} width={50} height={50}></Image></span> </Button></Link>
+             <Link href={"/"}> <Button radius="full" variant="soft" className="text-primary w-[150px] h-[50px] bg-secondary">REGISTER <span><Image className='bg-primary rounded-full p-2 ml-5' src={"/arrow.gif"} width={50} height={50} alt='img'></Image></span> </Button></Link>
               </div>
               <div className='flex items-start md:gap-10 gap-5 pt-16 text-white'>
                   <div>
