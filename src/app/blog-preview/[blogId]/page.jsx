@@ -14,7 +14,7 @@ function Page({ params }) {
             console.log("Fetching blog for slug:", params.blogId);
             getBlogBySlugName();
         }
-    }, [params, getBlogBySlugName]);
+    }, [params]);
 
     const getBlogBySlugName = async () => {
         const blog = await GlobalApi.getBlogBySlug(params.blogId);

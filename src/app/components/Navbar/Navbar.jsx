@@ -82,7 +82,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href={'/how'} className={`links `} >
+            <Link href={'/about'} className={`links `} >
               ABOUT
             </Link>
           </li>
@@ -92,14 +92,14 @@ const Navbar = () => {
             </Link> 
           </li>
           <li>
-            <Link href={'/how'} className={`links `} >
+            <Link href={'/contact'} className={`links `} >
               CONTACT
             </Link>
           </li>
           {
             user ? 
             <li>
-            <Link href={'/profile'} className={`profile `} >
+            <Link href={'/profile'} className={`links `} >
               DASHBOARD
             </Link>
           </li>
