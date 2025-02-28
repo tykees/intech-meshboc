@@ -9,7 +9,7 @@ function Page() {
     <div className='pt-40 md:px-20 px-10'>
         <div className='flex justify-between pb-10 items-center flex-wrap'>
           <h1 className='md:text-[80px] text-[45px]'>About Us</h1>
-          <p className='w-[450px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fuga officia. Nihil inventore velit recusandae magnam, adipisci iusto sunt vitae perferendis, laborum est consequuntur. Eum tempora voluptatibus omnis ad blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis et voluptate accusamus magnam velit quo doloribus, tenetur quibusdam? Alias?</p>
+          <p className='w-[650px] font-medium text-[20px]'> Intech Meshboc is a tech training platform dedicated to equipping aspiring developers with in-demand skills in frontend, backend, and full stack development. Through hands-on learning and real-world projects, we prepare students for successful careers in the tech industry. Join us and turn your passion for coding into a thriving profession!</p>
         </div>
         <div className='flex  bg-primary rounded-2xl py-10 justify-center'>
         <Image className='w-[500px]' src={'/about.png'} width={300} height={300} alt='' />

@@ -4,8 +4,8 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 
 const Calendar = () => {
   const events = [
-    { title: 'Javascript', date: '2025-02-01', color: '#7c58fd' },
-    { title: 'Node Js', date: '2025-02-05', color: '#7c58fd' },
+    // { title: 'Javascript', date: '2025-02-01', color: '#7c58fd' },
+    // { title: 'Node Js', date: '2025-02-05', color: '#7c58fd' },
   ];
 
   return (

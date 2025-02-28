@@ -38,11 +38,11 @@ const Page = () => {
             <div className='bg-white cour-border'>
           <h2 className='font-bold leading-tight pt-10 md:text-[80px] text-[40px]'>Learn from the <span className='text-secondary'>Professional</span><br/><span className=''>Developers</span></h2>
         <div className='flex justify-center items-center'>
-          <p className='w-[250px] text-left text-[0] md:text-[16px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus?</p>
+          <p className='w-[250px] text-left text-[0] md:text-[16px]'>Intech Meshboc: Where passion meets code, and innovation becomes reality. 🚀</p>
             <div className='md:bg-slate-100 rounded-t-full mb-0 w-[700px]'>
             <Image className='mt-[-100px] w-[600px]' src='/Michy2.png' width={500} height={500} alt='img'/>
             </div>
-            <p className='w-[250px] text-right text-[0] md:text-[16px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, expedita.</p>
+            <p className='w-[250px] text-right text-[0] md:text-[16px]'>Code. Create. Innovate. At Intech Meshboc, we turn ideas into reality.</p>
         </div>
         </div>
 
@@ -51,7 +51,7 @@ const Page = () => {
         <div className='bg-primary p-4 flex justify-around items-center flex-wrap'>
               <div className='w-[400px] text-left'>
                 <h2 className='text-[40px] font-bold leading-10 text-white mt-3'>Download the Course Curriculum</h2>
-                <p className='text-slate-300'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam natus sunt non omnis, nostrum id.</p>
+                <p className='text-slate-300'>Get a detailed guide on our training programs, covering frontend and backend development. Start your journey to becoming a skilled developer today!</p>
                 <div className='flex gap-3 mt-6'>
                   <Image src={"/arrow-up.gif"} width={50} height={50} alt='arrow' />
                   <p className='text-[35px] text-white font-bold'>90%<span className='font-thin'>|</span></p>
@@ -59,11 +59,31 @@ const Page = () => {
                 </div>
                 <Button className="border-secondary border w-[100%] rounded-2xl h-[50px] hover:bg-secondary hover:text-primary text-secondary mt-6 text-[20px]">Download Curriculum</Button>
               </div>
-            <div className='border mt-6 w-[400px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary bg-white h-[350px] shadow-md rounded-2xl'>
+            <div className='border mt-6 w-[400px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary bg-white h-[370px] shadow-md rounded-2xl'>
             <Image className='' src={"/full2.gif"} width={100} height={100} alt='arrow' />
             <p className='text-[25px] text-black text-left'>Full Stack <span className='font-bold'>Development</span> </p>
+            <p className='text-left'>Pay Twice</p>
                 <div className=''>
-                <h4 className='text-left text-[48px] font-extrabold'>N100,000</h4>
+                <h4 className='text-left text-[48px] font-extrabold'>N65,000</h4>
+                <p className='text-left'>Duration: 16 Weeks</p>
+                </div>
+                <div className='mt'>
+                  {
+                    user&&isLoaded ?
+                    <Button variant="outline" className="text-black w-[100%] mt-5 h-[50px] text-[20px] border-black rounded-2xl hover:bg-secondary" onClick={() => createUserCourse('Full-Stack Development')} >Make Payment</Button>
+                    :
+                    <Link href={"/sign-up"}> <Button variant="outline" className="text-black w-[100%] mt-5 h-[50px] text-[20px] bg-secondary border-none rounded-2xl shadow hover:bg-primary hover:text-white">Apply Now</Button> </Link>  
+                  }
+               
+                </div>
+                {/* ... */}
+            </div>  
+            <div className='border mt-6  w-[400px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary bg-white h-[370px] shadow-md rounded-2xl'>
+            <Image className='' src={"/full2.gif"} width={100} height={100} alt='arrow' />
+            <p className='text-[25px] text-black text-left'>Full Stack <span className='font-bold'>Development</span> </p>
+            <p className='text-left'>Full Payment (Save 10,000)</p>
+                <div className=''>
+                <h4 className='text-left text-[48px] font-extrabold'>N120,000</h4>
                 <p className='text-left'>Duration: 16 Weeks</p>
                 </div>
                 <div className='mt'>

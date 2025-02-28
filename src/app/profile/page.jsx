@@ -134,9 +134,9 @@ function Profile({}) {
             </div>
             {
               user&&userEnrolledCourses ?
-              <Button className="rounded-xl h-[50px] bg-secondary text-[20px] hover:text-white">Join</Button>
+              <Button className="rounded-xl focus:outline-none disabled:opacity-25 h-[50px] bg-secondary text-[20px] hover:text-white" disabled>Join</Button>
               :
-              <Button className="rounded-xl h-[50px] bg-secondary text-[20px] hover:text-white">Enrol</Button>
+              <Button className="rounded-xl focus:outline-none disabled:opacity-25 h-[50px] bg-secondary text-[20px] hover:text-white" disabled>Enrol</Button>
             }
             </div>
             {/* Second Div */}
