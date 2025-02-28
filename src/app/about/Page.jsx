@@ -6,16 +6,16 @@ import Image from 'next/image';
 
 function Page() {
   return (
-    <div className='pt-40 px-20'>
-        <div className='flex justify-between pb-10 items-center'>
-          <h1 className='text-[80px]'>About Us</h1>
+    <div className='pt-40 md:px-20 px-10'>
+        <div className='flex justify-between pb-10 items-center flex-wrap'>
+          <h1 className='md:text-[80px] text-[45px]'>About Us</h1>
           <p className='w-[450px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fuga officia. Nihil inventore velit recusandae magnam, adipisci iusto sunt vitae perferendis, laborum est consequuntur. Eum tempora voluptatibus omnis ad blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis et voluptate accusamus magnam velit quo doloribus, tenetur quibusdam? Alias?</p>
         </div>
         <div className='flex  bg-primary rounded-2xl py-10 justify-center'>
         <Image className='w-[500px]' src={'/about.png'} width={300} height={300} alt='' />
         </div>
         <h1 className='text-center text-[70px] py-10'>Values</h1>
-        <div className='flex justify-center gap-20 items-center'>
+        <div className='flex justify-center gap-20 items-center flex-wrap'>
           <div className='flex justify-center text-center flex-col items-center'>
           <Image className='bg-secondary p-10 rounded-full' src={'/about (1).gif'} width={150} height={150} alt='img' />
           <p className='w-[120px] text-[20px]'>Accessibility</p>

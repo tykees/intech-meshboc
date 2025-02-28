@@ -17,7 +17,7 @@ function Hero() {
               <p className='md:w-[500px] w-[350px] text-start pt-5 block mt-5 text-white'>Master in-demand tech skills and transform your career with Meshboc – your gateway to a thriving digital future.</p>
               <div className='flex justify-start pt-5	 text-center md:gap-8 gap-4 mt-5'>
                 {
-                  user?
+                  user&&isLoaded?
                   <Link href={"/website"}><Button variant="outline"  className="text-secondary border border-secondary w-[150px] h-[50px] hover:text-secondary">LEARN MORE</Button></Link>  :
                   <Link href={"/sign-up"}><Button variant="outline"  className="text-secondary border border-secondary w-[150px] h-[50px] hover:text-secondary">GET STARTED</Button></Link> 
                 }

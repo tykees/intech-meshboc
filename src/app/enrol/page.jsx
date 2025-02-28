@@ -71,19 +71,9 @@ const Page = () => {
                     user&&isLoaded ?
                     <Button variant="outline" className="text-black w-[100%] mt-5 h-[50px] text-[20px] border-black rounded-2xl hover:bg-secondary" onClick={() => createUserCourse('Full-Stack Development')} >Make Payment</Button>
                     :
-                    <Link href={"/sign-up"}> <Button variant="outline" className="text-slate-300  w-[100%] mt-5 h-[50px] text-[20px] rounded-2xl  border-secondary hover:bg-secondary">Apply Now</Button> </Link>  
+                    <Link href={"/sign-up"}> <Button variant="outline" className="text-black w-[100%] mt-5 h-[50px] text-[20px] bg-secondary border-none rounded-2xl shadow hover:bg-primary hover:text-white">Apply Now</Button> </Link>  
                   }
                
-                </div>
-                <div className=' pt-4 text-slate-300 text-[15px] text-left'>
-                {/* <ul>
-                    <li className='flex items-center gap-2'><FaCheckCircle />1 Year Host Plan</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle />1 Year Domain</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> Managed by ScuttleAds</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> Shared Hosting</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> SEO</li>
-                    <li className='flex items-center gap-2'><FaCheckCircle /> Customer Support</li>
-                </ul> */}
                 </div>
             </div>  
        </div>

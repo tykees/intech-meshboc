@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 
 function Courses() {
@@ -29,7 +30,7 @@ function Courses() {
                     <Image className='bg-slate-100 p-2 rounded-b-2xl w-[50px] h-[50px]' src={"/mongo.png"} width={80} height={80} alt='img'/>
                     </div>
                     <p className='text-[12px] text-center pt-3'>Course Duration: 16 weeks</p>
-                    <Button className="w-[100%] rounded-t-sm mt-10 hover:bg-lime-300 text-[26px] bg-secondary h-[60px]">Enroll Now</Button>
+                   <Link href={"/enrol"}> <Button className="w-[100%] rounded-t-sm mt-10 hover:bg-lime-300 text-[26px] bg-secondary h-[60px]">Enroll Now</Button></Link>
                 </div>
             </div>
         </div>

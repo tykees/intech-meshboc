@@ -53,7 +53,7 @@ function Subscribe() {
               </span>
             </p>
             <p className="md:w-[500px] w-[320px] text-start pt-5 block mt-5 text-white">
-              We offer services that navigate your business to the next phase of sales and create a stable online presence without breaking the bank. Your visibility is certain with us.
+            Stay updated with Intech Meshboc! Subscribe to get the latest tech training updates, career opportunities, and industry insights delivered straight to your inbox.
             </p>
             <div className="mt-10">
               <input
