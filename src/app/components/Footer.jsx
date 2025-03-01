@@ -9,7 +9,7 @@ function Footer() {
     <>
     <div className='my-20'>
       <div className='md:text-[250px] text-[50px] font-medium text-center text-slate-800'>GET<span className='text-primary italic'>IN</span>TOUCH</div>
-        <div className='flex justify-between items-center flex-wrap mx-12'>
+        <div className='flex justify-between items-center flex-wrap mx-4'>
               <div>
                   <Image src={"/meshboc1.png"} width={160} height={160} alt='logo'/>
                   <p className='md:w-[350px] w-[300px] text-[20px] pt-5'>We teach the skills that builds the future.</p>
