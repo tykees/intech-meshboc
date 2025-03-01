@@ -54,14 +54,14 @@ function Profile({}) {
 
   return (
     <div className='bg-black pt-20'>
-      <h1 className='md:pl-32 text-[30px] text-center pt-10 text-slate-200 font-medium'>Student Overview</h1>
+      <h1 className='md:pl-32 pl-10 text-[30px]  pt-10 text-slate-200 font-medium'>Student Overview</h1>
         <div className='flex justify-around flex-wrap'>
         <div className='grid md:grid-cols-3 grid-cols-1 items-center gap-2 border border-slate-700 bg-black w-[1000px] p-8 rounded-xl'>
            <div className=' flex-col justify-center items-center'>
-              <Image className='md:w-[100px] md:h-[100px] w-[200px] h-[200px] shadow-2xl rounded-full' src={user?.imageUrl} width={100} height={100} alt="userImage"/>
-              <p className='text-left text-[16px] text-slate-300 font-medium'>{user?.fullName}</p>
+              <Image className='md:w-[100px] md:h-[100px] w-[100%] h-[200px] shadow-2xl md:rounded-full rounded-xl' src={user?.imageUrl} width={100} height={100} alt="userImage"/>
+              <p className='md:text-left text-center text-[18px] text-slate-300 mt-2 font-medium'>{user?.fullName}</p>
             </div>
-            <div className='flex items-center gap-3'>
+            <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
             <div>
             <Image className='w-[80px] bg-slate-900 p-2 rounded-full' src={"/grade.svg"} width={80} height={80} alt='grade'/>
             </div>
@@ -79,7 +79,7 @@ function Profile({}) {
             </div>
             </div>
 
-            <div className='flex items-center gap-3'>
+            <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
               <div>
               <Image className='w-[80px] bg-slate-900 rounded-full' src={"/attendance.svg"} width={80} height={80} alt='grade'/>
               </div>
@@ -97,9 +97,9 @@ function Profile({}) {
               </div>
             </div>
 
-            <div className='flex items-center w-[250px] gap-3 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
             <div>
-              <Image className='w-[80px] bg-slate-900 rounded-full' src={"/attendance.svg"} width={80} height={80} alt='grade'/>
+              <Image className='w-[80px] bg-slate-900 rounded-full' src={"/point.png"} width={80} height={80} alt='grade'/>
             </div>
             <div>
             {
@@ -115,7 +115,7 @@ function Profile({}) {
             </div>           
             </div>
 
-            <div className='flex items-center gap-3'>
+            <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
               <div>
               <Image className='w-[80px] bg-slate-900 rounded-full' src={"/link.svg"} width={80} height={80} alt='grade'/>
               </div>
@@ -144,11 +144,11 @@ function Profile({}) {
               <Image className='w-[350px]' src={"/prof2.png"} width={300} height={300} alt='work'/>
             </div>
         </div>
-        <div className='flex flex-wrap gap-40 bg-slate-200 mt-10'>
-        <div className='md:ml-28 md:w-[1000px] h-[100%] bg-white rounded-xl mt-10 p-5 mb-10'>
+        <div className='flex flex-wrap md:gap-40 gap-5 bg-slate-200 mt-10'>
+        <div className='md:ml-28 md:w-[1000px] h-[100%] bg-white rounded-xl mt-10 p-5 mb-5'>
         <Calendar/>
         </div> 
-        <div className='mt-10 w-[400px] h-[400px] bg-white rounded-xl pt-5 px-5'>
+        <div className='md:mt-10 w-[400px] h-[400px] mb-10 bg-white rounded-xl px-5'>
               <div className='flex gap-4 border-b border-slate-400 items-center'>
               <h1 className='text-[28px] font-bold'>Projects</h1>
               <Image className='w-[50px]' src={"/case.gif"} width={300} height={300} alt='work'/>

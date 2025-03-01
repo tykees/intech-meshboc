@@ -23,7 +23,7 @@ function Page({ params }) {
     };
 
     return (
-        <div className="pt-20">
+        <div className="pt-20 px-3">
             {blogInfo ? (
                 <div className="max-w-3xl mx-auto">
                     <h1 className="text-3xl font-bold">{blogInfo.blogTitle}</h1>
