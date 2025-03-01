@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 
 function Footer() {
   const today = new Date();
@@ -23,19 +24,17 @@ function Footer() {
               <div>
                   <h2 className='text-[24px] font-medium'>Resources</h2>
                   <ul>
-                    <li>Privacy policy</li>
-                    <li>Terms of service</li>
-                    <li>FAQS</li>
-                    <li>Design</li>
-                    <li>Our Blog</li>
+                    <li> <Link href={'/privacy'}> Privacy policy</Link></li>
+                    <li> <Link href={'/terms'}> Terms of service</Link></li>
+                    <li> <Link href={'/blogs'}> Our Blog</Link></li>
                     <li>Scholarships</li>
                   </ul>
                 </div>
                 <div>
                   <h2 className='text-[24px] font-medium'>About</h2>
                   <ul>
-                    <li>Contact us</li>
-                    <li>About us</li>
+                    <li> <Link href={'/contact'}> Contact us</Link></li>
+                    <li> <Link href={'/about'}>About us</Link></li>
                   </ul>
                 </div>
                 <div>

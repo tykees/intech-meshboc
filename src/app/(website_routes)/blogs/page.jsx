@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import GlobalApi from '@/app/_utils/GlobalApi';
 import BlogItem from '../_components/BlogItem';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Page() {
     const [getBlogs, setGetBlogs] = useState([]);
@@ -20,6 +21,22 @@ function Page() {
    
   }
   return (
+    <>
+    <div className='bg-slate-100 h-[500px]'>
+    <div className='pt-20 flex justify-center gap-3 flex-wrap items-center'>
+        <div className='text-[80px] font-bold'>Stay Ahead in </div>
+        <div><Image src={'/phone.gif'} width={60} height={60} alt='gif'></Image></div>
+        <div><Image src={'/balls.png'} width={30} height={30} alt='gif'></Image></div>
+        <div className='text-[80px] font-bold'>Tech</div>
+    </div>
+    <div className='flex justify-center gap-3 flex-wrap items-center'>
+    <div className='text-[80px] font-bold'>Insights, Trends </div>
+        <div><Image src={'/devabout.gif'} width={60} height={60} alt='gif'></Image></div>
+        <div><Image src={'/inbtw.png'} width={120} height={120} alt='gif'></Image></div>
+        <div className='text-[80px] font-bold'>& Tutorials</div>
+    </div>
+    <p className='text-center'>Explore expert tips, industry trends, and hands-on guides to boost your tech skills.</p>
+    </div>
     <div>
         <div className='grid grid-cols-1 lg:grid-cols-4 gap-3 mt-20'>
         {getBlogs.map((item, index)=>(
@@ -34,6 +51,7 @@ function Page() {
         </div>
 
     </div>
+    </>
   )
 }
 
