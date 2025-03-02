@@ -15,7 +15,7 @@ function Courses() {
                 <Image className='p-6 m-auto border-slate-50 border-2 shadow rounded-xl' src={"/full.gif"} width={150} height={150} alt='img'/>
                 </div>
                 <div className=''>
-                    <h1 className='text-[22px] text-slate-800 font-medium'>Join Our Full-Stack <br/> <span className='text-[26px]'>Development Course</span> </h1>
+                    <h1 className='text-[22px] text-slate-800 font-medium raleway'>Join Our Full-Stack <br/> <span className='text-[26px]'>Development Course</span> </h1>
                     <div className='flex justify-around mt-10 items-center'>
                     <Image className='bg-slate-100 p-2 rounded-b-2xl w-[50px] h-[50px]' src={"/html.png"} width={80} height={80} alt='img'/>
                     <Image className='bg-slate-100 p-2 rounded-b-2xl w-[50px] h-[50px]' src={"/css.png"} width={80} height={80} alt='img'/>
@@ -30,7 +30,7 @@ function Courses() {
                     <Image className='bg-slate-100 p-2 rounded-b-2xl w-[50px] h-[50px]' src={"/mongo.png"} width={80} height={80} alt='img'/>
                     </div>
                     <p className='text-[12px] text-center pt-3'>Course Duration: 16 weeks</p>
-                   <Link href={"/enrol"}> <Button className="w-[100%] rounded-t-sm mt-10 hover:bg-lime-300 text-[26px] bg-secondary h-[60px]">Enroll Now</Button></Link>
+                   <Link href={"/enrol"}> <Button className="w-[100%] rounded-t-sm mt-10 hover:bg-lime-300 text-[26px] bg-secondary h-[60px] raleway">Enroll Now</Button></Link>
                 </div>
             </div>
         </div>

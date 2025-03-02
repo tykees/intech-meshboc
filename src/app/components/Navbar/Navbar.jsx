@@ -82,7 +82,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href={'/about'} className={`links `} >
+            <Link href={'/aboutus'} className={`links `} >
               ABOUT
             </Link>
           </li>
@@ -151,7 +151,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href={'/about'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
+              <Link href={'/aboutus'} className="links flex justify-start gap-3 items-center font-normal text-lg" onClick={handleMenuClick}>
               <MdPermDeviceInformation />
               ABOUT
               </Link>

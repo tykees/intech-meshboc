@@ -54,12 +54,12 @@ function Profile({}) {
 
   return (
     <div className='bg-black pt-20'>
-      <h1 className='md:pl-32 pl-10 text-[30px]  pt-10 text-slate-200 font-medium'>Student Overview</h1>
+      <h1 className='md:pl-32 pl-10 text-[26px]  pt-10 text-slate-200 font-medium raleway'>Student Overview</h1>
         <div className='flex justify-around flex-wrap'>
         <div className='grid md:grid-cols-3 grid-cols-1 items-center gap-2 border border-slate-700 bg-black w-[1000px] p-8 rounded-xl'>
            <div className=' flex-col justify-center items-center'>
-              <Image className='md:w-[100px] md:h-[100px] w-[200px] mx-auto h-[200px] shadow-2xl md:rounded-full rounded-xl' src={user?.imageUrl} width={100} height={100} alt="userImage"/>
-              <p className='md:text-left text-center text-[18px] text-slate-300 mt-2 font-medium'>{user?.fullName}</p>
+              <Image className='md:w-[100px] md:h-[100px] w-[200px] md:mx-0 mx-auto h-[200px] shadow-2xl md:rounded-full rounded-xl' src={user?.imageUrl} width={100} height={100} alt="userImage"/>
+              <p className='md:text-left text-center text-[18px] text-slate-300 mt-2 font-medium raleway'>{user?.fullName}</p>
             </div>
             <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
             <div>

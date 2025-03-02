@@ -46,13 +46,13 @@ function Subscribe() {
       <div className="pt-20">
         <div className="flex justify-around bg-primary items-start py-10 rounded-2xl md:h-[600px] h-[100%] flex-wrap shadow">
           <div>
-            <p className="md:text-[80px] text-[30px] mt-12 text-start text-white leading-none font-bold">
+            <p className="md:text-[80px] text-[30px] mt-12 text-start text-white leading-none font-bold raleway">
               Subscribe for fresh <br />
               <span className="md:text-[80px] text-[30px] font-bold">
                 content and updates
               </span>
             </p>
-            <p className="md:w-[500px] w-[320px] text-start pt-5 block mt-5 text-white">
+            <p className="md:w-[500px] w-[320px] text-start pt-5 block mt-5 text-white poppins">
             Stay updated with Intech Meshboc! Subscribe to get the latest tech training updates, career opportunities, and industry insights delivered straight to your inbox.
             </p>
             <div className="mt-10">
