@@ -1,10 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-
-
-
-function Page() {
+function About() {
   return (
     <div className='pt-40 md:px-20 px-10'>
         <div className='flex justify-between pb-10 items-center flex-wrap'>
@@ -37,4 +34,4 @@ function Page() {
   )
 }
 
-export default Page
+export default About
