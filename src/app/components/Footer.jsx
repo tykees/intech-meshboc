@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
     <div className='my-20'>
-      <div className='md:text-[250px] text-[50px] font-medium text-center text-slate-800'>GET<span className='text-primary italic'>IN</span>TOUCH</div>
+      <div className='md:text-[250px] text-[55px] font-medium text-center text-slate-800'>GET<span className='text-primary italic'>IN</span>TOUCH</div>
         <div className='flex justify-between items-center flex-wrap mx-4'>
               <div>
                   <Image src={"/meshboc1.png"} width={160} height={160} alt='logo'/>
