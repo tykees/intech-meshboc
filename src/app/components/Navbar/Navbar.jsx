@@ -125,7 +125,7 @@ const Navbar = () => {
             ?
             <UserButton/>
               :
-           <Link href={"/sign-up"}><Button variant="outline" className="text-black w-[150px] h-[50px] bg-primary">REGISTER</Button></Link> 
+           <Link href={"/sign-up"}><Button variant="outline" className="text-black w-[150px] h-[50px] bg-primary" onClick={handleMenuClick}>REGISTER</Button></Link> 
               }
             </li>
             {

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 function Footer() {
   const today = new Date();
@@ -8,7 +9,8 @@ function Footer() {
   return (
     <>
     <div className='my-20'>
-      <div className='md:text-[250px] text-[55px] font-medium text-center text-slate-800 raleway'>GET<span className='text-primary'>IN</span>TOUCH</div>
+      <div className='md:text-[60px] text-[28px] font-medium text-center text-slate-800 raleway'>WANNA BUILD AND IDEA? <br/> <span className='md:text-[250px] text-[55px]'> GET<span className='text-primary'>IN</span>TOUCH</span></div>
+     <Link href={'tel:08105197239'}> <Button className="mx-auto block w-[250px] h-[60px] mb-20 text-white text-[20px]">Place a Call Now</Button></Link>
         <div className='flex justify-between items-center flex-wrap mx-4'>
               <div>
                   <Image src={"/meshboc1.png"} width={160} height={160} alt='logo'/>
