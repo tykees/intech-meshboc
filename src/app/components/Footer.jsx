@@ -16,7 +16,7 @@ function Footer() {
                   <Image src={"/meshboc1.png"} width={160} height={160} alt='logo'/>
                   <p className='md:w-[350px] w-[300px] text-[20px] pt-5 raleway'>We teach the skills that builds the future.</p>
                   <div className='flex items-center gap-2 mt-6'>
-                  <Image className='w-[60px] h-[60px] border-slate-300 border rounded-full p-2' src={"/x.gif"} width={100} height={100} alt='logo'/>
+                 <a href='https://x.com/meshboc' target='_blank'><Image className='w-[60px] h-[60px] border-slate-300 border rounded-full p-2' src={"/x.gif"} width={100} height={100} alt='logo'/></a> 
                   <Image className='w-[60px] h-[60px] border-slate-300 border rounded-full p-2'  src={"/youtube.gif"} width={100} height={100} alt='logo'/>
                   <Image className='w-[60px] h-[60px] border-slate-300 border rounded-full p-2'  src={"/facebook.gif"} width={100} height={100} alt='logo'/>
                   <Image className='w-[60px] h-[60px] border-slate-300 border rounded-full p-2'  src={"/insta.gif"} width={100} height={100} alt='logo'/>
