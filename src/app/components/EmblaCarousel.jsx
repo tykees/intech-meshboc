@@ -8,6 +8,8 @@ export function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [AutoScroll()])
 
   return (
+    <>
+    <h1 className='text-center text-[40px] raleway'>Reviews</h1>
     <div className="embla" ref={emblaRef}>
       <div className="embla__container w-[450px] container mx-auto py-5">
         <div className="embla__slide flex justify-center rounded-xl border-slate-200 border-2 items-center shadow-lg">
@@ -43,5 +45,6 @@ export function EmblaCarousel() {
         </div>
       </div>
     </div>
+    </>
   )
 }

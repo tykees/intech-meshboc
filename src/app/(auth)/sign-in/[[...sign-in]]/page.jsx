@@ -7,7 +7,7 @@ export default function Page() {
 
 <section className="bg-gray-900">
   <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-    <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
+    <section className="relative flex h-72 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
       <Image
         alt=""
         src="/signin.png"
@@ -19,7 +19,7 @@ export default function Page() {
       <div className="hidden lg:relative lg:block lg:p-12">
        
 
-        <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+        <h2 className="mt-6 text-2xl font-thin text-white sm:text-3xl md:text-4xl">
         Welcome Back
         </h2>
 
@@ -35,12 +35,11 @@ export default function Page() {
       <div className="max-w-xl lg:max-w-3xl">
         <div className="relative -mt-16 block lg:hidden">
 
-          <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-            Welcome to ScuttleAds
+          <h1 className="mt-10 text-xl text-center font-thin text-slate-200 sm:text-3xl md:text-4xl">
+            Welcome Back
           </h1>
 
           <p className="mt-4 leading-relaxed text-gray-500">
-           Your business ultimate online solution.
           </p>
         </div>
 
