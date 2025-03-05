@@ -10,7 +10,7 @@ function Instructor() {
                 <div className='md:text-[62px] text-[22px] font-medium raleway'>Join the number of Students</div>
           `  <div className='flex justify-center items-center mt-[-10px] mb-2'> <div className='md:text-[62px] text-[0px] font-medium raleway'>learning on Intech</div> <div className='flex'><Image className='w-[50px] h-[50px] md:w-[100px] md:h-[100px]' src={"/diva.png"} width={100} height={100} alt='img'/> <Image className='ml-[-12px] w-[50px] h-[50px] md:w-[100px] md:h-[100px]' src={"/Pod.png"} width={100} height={100} alt='img'/> <Image className='ml-[-12px] w-[50px] h-[50px] md:w-[100px] md:h-[100px]' src={"/tima.png"} width={100} height={100} alt='img'/> <p className='md:text-[62px] text-[0px] font-medium raleway'>Meshboc and</p> </div>
           </div>
-          <div className='md:text-[62px] text-[20px] font-medium raleway leading-tight'>become a great developer creating real life solutions.</div>
+          <div className='md:text-[62px] text-[20px] font-medium raleway leading-tight'>Become a great developer creating real life solutions.</div>
             </div>
         </div>
     </div>
