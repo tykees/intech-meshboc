@@ -10,7 +10,7 @@ function Hero() {
 
   return (
     <div className='md:px-8'>
-        <div className='pt-20'>
+        <div className='md:pt-20 pt-12'>
             <div className='md:flex justify-around items-start py-10 bg-primary rounded-2xl h-[940px] md:h-[700px] p-4 flex-wrap shadow'>
               <div>
               <p className='md:text-[95px] text-[40px] mt-12 text-start text-white leading-none font-bold raleway'>Learn. Build. <span className='text-secondary'> Succeed.</span> <br/> <span className='md:text-[33px] text-[13px] font-bold '>Hands-on Training | Expert Instructors | Job-Ready Skill</span></p>
