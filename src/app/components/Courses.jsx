@@ -15,7 +15,7 @@ function Courses() {
                 <Image className='p-6 m-auto border-slate-50 border-2 shadow rounded-xl' src={"/full.gif"} width={150} height={150} alt='img'/>
                 </div>
                 <div className=''>
-                    <h1 className='text-[22px] text-slate-800 font-medium raleway'>Join Our Full-Stack <br/> <span className='text-[26px]'>Development Course</span> </h1>
+                    <h1 className='text-[22px] text-slate-800 font-medium raleway'>Join Our May 2025 Cohort.<br/> <span className='text-[26px]'>Full Stack Course</span> </h1>
                     <div className='flex justify-around mt-10 items-center'>
                     <Image className='bg-slate-100 p-2 rounded-b-2xl w-[50px] h-[50px]' src={"/html.png"} width={80} height={80} alt='img'/>
                     <Image className='bg-slate-100 p-2 rounded-b-2xl w-[50px] h-[50px]' src={"/css.png"} width={80} height={80} alt='img'/>

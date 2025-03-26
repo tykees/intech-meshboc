@@ -61,7 +61,7 @@ function Profile({}) {
               <Image className='md:w-[100px] md:h-[100px] w-[200px] md:mx-0 mx-auto h-[200px] shadow-2xl md:rounded-full rounded-xl' src={user?.imageUrl} width={100} height={100} alt="userImage"/>
               <p className='md:text-left text-center text-[18px] text-slate-300 mt-2 font-medium raleway'>{user?.fullName}</p>
             </div>
-            <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[410px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
             <div>
             <Image className='w-[80px] bg-slate-900 p-2 rounded-full' src={"/grade.svg"} width={80} height={80} alt='grade'/>
             </div>
@@ -79,7 +79,7 @@ function Profile({}) {
             </div>
             </div>
 
-            <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[410px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
               <div>
               <Image className='w-[80px] bg-slate-900 rounded-full' src={"/attendance.svg"} width={80} height={80} alt='grade'/>
               </div>
@@ -97,7 +97,7 @@ function Profile({}) {
               </div>
             </div>
 
-            <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[410px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
             <div>
               <Image className='w-[80px] bg-slate-900 rounded-full' src={"/point.png"} width={80} height={80} alt='grade'/>
             </div>
@@ -115,7 +115,7 @@ function Profile({}) {
             </div>           
             </div>
 
-            <div className='flex items-center md:w-[250px] w-[310px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[410px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
               <div>
               <Image className='w-[80px] bg-slate-900 rounded-full' src={"/link.svg"} width={80} height={80} alt='grade'/>
               </div>
@@ -145,10 +145,10 @@ function Profile({}) {
             </div>
         </div>
         <div className='flex flex-wrap md:gap-40 gap-5 bg-slate-200 mt-10'>
-        <div className='md:ml-28 md:w-[1000px] h-[100%] bg-white rounded-xl mt-10 p-5 mb-5'>
+        <div className='md:ml-28 md:w-[1000px] ml-2 w-[450px] h-[100%] bg-white rounded-xl mt-10 p-5 mb-5'>
         <Calendar/>
         </div> 
-        <div className='md:mt-10 w-[400px] h-[400px] mb-10 bg-white rounded-xl px-5'>
+        <div className='md:mt-10 md:w-[400px] w-[450px] h-[400px] ml-2 mb-10 bg-white rounded-xl px-5'>
               <div className='flex gap-4 border-b border-slate-400 items-center'>
               <h1 className='text-[28px] font-bold'>Projects</h1>
               <Image className='w-[50px]' src={"/case.gif"} width={300} height={300} alt='work'/>
