@@ -61,7 +61,7 @@ function Profile({}) {
               <Image className='md:w-[100px] md:h-[100px] w-[200px] md:mx-0 mx-auto h-[200px] shadow-2xl md:rounded-full rounded-xl' src={user?.imageUrl} width={100} height={100} alt="userImage"/>
               <p className='md:text-left text-center text-[18px] text-slate-300 mt-2 font-medium raleway'>{user?.fullName}</p>
             </div>
-            <div className='flex items-center md:w-[250px] w-[410px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[350px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
             <div>
             <Image className='w-[80px] bg-slate-900 p-2 rounded-full' src={"/grade.svg"} width={80} height={80} alt='grade'/>
             </div>
@@ -79,7 +79,7 @@ function Profile({}) {
             </div>
             </div>
 
-            <div className='flex items-center md:w-[250px] w-[410px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[350px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
               <div>
               <Image className='w-[80px] bg-slate-900 rounded-full' src={"/attendance.svg"} width={80} height={80} alt='grade'/>
               </div>
@@ -97,7 +97,7 @@ function Profile({}) {
               </div>
             </div>
 
-            <div className='flex items-center md:w-[250px] w-[410px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[350px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
             <div>
               <Image className='w-[80px] bg-slate-900 rounded-full' src={"/point.png"} width={80} height={80} alt='grade'/>
             </div>
@@ -115,7 +115,7 @@ function Profile({}) {
             </div>           
             </div>
 
-            <div className='flex items-center md:w-[250px] w-[410px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
+            <div className='flex items-center md:w-[250px] w-[350px] md:gap-3 gap-20 border border-slate-800 p-3 rounded-2xl'>
               <div>
               <Image className='w-[80px] bg-slate-900 rounded-full' src={"/link.svg"} width={80} height={80} alt='grade'/>
               </div>
