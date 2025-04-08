@@ -5,7 +5,7 @@ import Image from 'next/image'
 import AutoScroll from 'embla-carousel-auto-scroll'
 
 export function EmblaCarousel() {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [AutoScroll()])
+  const [emblaRef] = useEmblaCarousel({ loop: false })
 
   return (
     <>

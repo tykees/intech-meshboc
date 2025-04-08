@@ -69,20 +69,20 @@ const Page = () => {
                 </div>
               <Link href={'/intechcur.pdf'}> <Button className="border-secondary border w-[100%] rounded-2xl h-[50px] hover:bg-secondary hover:text-primary text-secondary mt-6 text-[20px] poppins">Download Curriculum</Button></Link>
               </div>
-            <div className='border mt-6 w-[350px] p-4 bg-inherit bg-primary my-1 hover:shadow-xl border-slate-100 h-[370px] shadow-md rounded-2xl'>
+            <div className='border mt-6 w-[350px] p-4 bg-inherit bg-primary my-1 hover:shadow-xl border-slate-400 h-[370px] shadow-md rounded-2xl'>
             <Image className='' src={"/full2.gif"} width={100} height={100} alt='arrow' />
             <p className='text-[25px] text-white text-left'>Full Stack <span className='font-bold'>Development</span> </p>
             <p className='text-left text-slate-100'>Pay Monthly</p>
                 <div className=''>
-                <h4 className='text-left text-[48px] text-secondary font-extrabold'>N35,000</h4>
+                <h4 className='text-left text-[48px] text-secondary font-extrabold'>N28,500</h4>
                 <p className='text-left text-slate-100'>Duration: 4 Months</p>
                 </div>
                 <div className='mt'>
                   {
                     user&&isLoaded ?
-                    <Button variant="outline" className="text-black w-[100%] mt-5 h-[50px] text-[20px] border-black rounded-2xl hover:bg-secondary" onClick={() => createUserCourse('Full-Stack Development_m')} >Make Payment</Button>
+                    <Button variant="outline" className="text-white w-[100%] mt-5 h-[50px] text-[20px] border-slate-400 rounded-2xl hover:bg-secondary" onClick={() => createUserCourse('Full-Stack Development_m')} >Make Payment</Button>
                     :
-                    <Link href={"/sign-up"}> <Button variant="outline" className="text-black w-[100%] mt-5 h-[50px] text-[20px] bg-secondary border-none rounded-2xl shadow hover:bg-white hover:text-black">Apply Now</Button> </Link>  
+                    <Link href={"/sign-up"}> <Button variant="outline" className="text-slate-400 w-[100%] mt-5 h-[50px] text-[20px] bg-secondary border-none rounded-2xl shadow hover:bg-white hover:text-black">Apply Now</Button> </Link>  
                   }
                
                 </div>
@@ -91,9 +91,9 @@ const Page = () => {
             <div className='border mt-6  w-[350px] p-4 bg-inherit  my-1 hover:shadow-xl border-none bg-purple-300 h-[370px] shadow-md rounded-2xl'>
             <Image className='' src={"/full2.gif"} width={100} height={100} alt='arrow' />
             <p className='text-[25px] text-black text-left'>Full Stack <span className='font-bold'>Development</span> </p>
-            <p className='text-left'>Pay Twice (Save #10,000)</p>
+            <p className='text-left'>Pay Twice (Save #9,000)</p>
                 <div className=''>
-                <h4 className='text-left text-[48px] font-extrabold'>N65,000</h4>
+                <h4 className='text-left text-[48px] font-extrabold'>N52,500</h4>
                 <p className='text-left'>Duration: 4 Months</p>
                 </div>
                 <div className='mt'>
@@ -110,9 +110,9 @@ const Page = () => {
             <div className='border mt-6  w-[350px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary bg-white h-[370px] shadow-md rounded-2xl'>
             <Image className='' src={"/full2.gif"} width={100} height={100} alt='arrow' />
             <p className='text-[25px] text-black text-left'>Full Stack <span className='font-bold'>Development</span> </p>
-            <p className='text-left'>Full Payment (Save #20,000)</p>
+            <p className='text-left'>Full Payment (Save #14,000)</p>
                 <div className=''>
-                <h4 className='text-left text-[48px] font-extrabold'>N120,000</h4>
+                <h4 className='text-left text-[48px] font-extrabold'>N100,000</h4>
                 <p className='text-left'>Duration: 4 Months</p>
                 </div>
                 <div className='mt'>

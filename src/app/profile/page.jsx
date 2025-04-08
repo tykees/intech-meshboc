@@ -54,7 +54,7 @@ function Profile({}) {
 
   return (
     <div className='bg-black pt-20'>
-      <h1 className='md:pl-32 pl-10 text-[26px]  pt-10 text-slate-200 font-medium raleway'>Student Overview</h1>
+      <h1 className='md:pl-[90px] pl-10 text-[26px]  pt-10 text-slate-200 font-medium raleway'>Student Overview</h1>
         <div className='flex justify-around flex-wrap'>
         <div className='grid md:grid-cols-3 grid-cols-1 items-center gap-2 border border-slate-700 bg-black w-[1000px] p-8 rounded-xl'>
            <div className=' flex-col justify-center items-center'>
@@ -75,7 +75,7 @@ function Profile({}) {
                 </div>
               ))
             }
-            <p className='text-[14px] text-slate-500'>Course Grade</p>
+            <p className='text-[14px] text-slate-500'>Grade</p>
             </div>
             </div>
 
@@ -111,7 +111,7 @@ function Profile({}) {
                 </div>
               ))
             }
-            <p className='text-[14px] text-slate-500'>Earning Points</p>
+            <p className='text-[14px] text-slate-500'>Points</p>
             </div>           
             </div>
 
@@ -145,7 +145,7 @@ function Profile({}) {
             </div>
         </div>
         <div className='flex flex-wrap md:gap-40 gap-5 bg-slate-200 mt-10'>
-        <div className='md:ml-28 md:w-[1000px] ml-2 w-[450px] h-[100%] bg-white rounded-xl mt-10 p-5 mb-5'>
+        <div className='md:ml-[80px] md:w-[1000px] ml-2 w-[450px] h-[100%] bg-white rounded-xl mt-10 p-5 mb-5'>
         <Calendar/>
         </div> 
         <div className='md:mt-10 md:w-[400px] w-[450px] h-[400px] ml-2 mb-10 bg-white rounded-xl px-5'>
