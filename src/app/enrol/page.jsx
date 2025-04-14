@@ -74,7 +74,7 @@ const Page = () => {
             <p className='text-[25px] text-white text-left'>Full Stack <span className='font-bold'>Development</span> </p>
             <p className='text-left text-slate-100'>Pay Monthly</p>
                 <div className=''>
-                <h4 className='text-left text-[48px] text-secondary font-extrabold'>N28,500</h4>
+                <h4 className='text-left text-[48px] text-secondary font-extrabold'>N37,000</h4>
                 <p className='text-left text-slate-100'>Duration: 4 Months</p>
                 </div>
                 <div className='mt'>
@@ -88,7 +88,7 @@ const Page = () => {
                 </div>
                 {/* ... */}
             </div>  
-            <div className='border mt-6  w-[350px] p-4 bg-inherit  my-1 hover:shadow-xl border-none bg-purple-300 h-[370px] shadow-md rounded-2xl'>
+            {/* <div className='border mt-6  w-[350px] p-4 bg-inherit  my-1 hover:shadow-xl border-none bg-purple-300 h-[370px] shadow-md rounded-2xl'>
             <Image className='' src={"/full2.gif"} width={100} height={100} alt='arrow' />
             <p className='text-[25px] text-black text-left'>Full Stack <span className='font-bold'>Development</span> </p>
             <p className='text-left'>Pay Twice (Save #9,000)</p>
@@ -105,14 +105,14 @@ const Page = () => {
                   }
                
                 </div>
-            </div>  
+            </div>   */}
             {/* ... */}
             <div className='border mt-6  w-[350px] p-4 bg-inherit  my-1 hover:shadow-xl border-secondary bg-white h-[370px] shadow-md rounded-2xl'>
             <Image className='' src={"/full2.gif"} width={100} height={100} alt='arrow' />
             <p className='text-[25px] text-black text-left'>Full Stack <span className='font-bold'>Development</span> </p>
-            <p className='text-left'>Full Payment (Save #14,000)</p>
+            <p className='text-left'>Full Payment (Save #8,000)</p>
                 <div className=''>
-                <h4 className='text-left text-[48px] font-extrabold'>N100,000</h4>
+                <h4 className='text-left text-[48px] font-extrabold'>N140,000</h4>
                 <p className='text-left'>Duration: 4 Months</p>
                 </div>
                 <div className='mt'>
