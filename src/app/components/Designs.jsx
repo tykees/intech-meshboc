@@ -37,8 +37,8 @@ function Designs() {
         </div>
         <div className='mt-[30px]'>
             <div className='grid w-fit mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-                {services.map((item)=>(
-                <div className='bg-purple-50 hover:bg-primary border-primary border transition-colors p-6 w-[280px] md:w-[400px] h-[200px] rounded-xl shadow text-black hover:text-white flex flex-col items-start justify-center text-start'>
+                {services.map((index, item)=>(
+                <div key={index} className='bg-purple-50 hover:bg-primary border-primary border transition-colors p-6 w-[280px] md:w-[400px] h-[200px] rounded-xl shadow text-black hover:text-white flex flex-col items-start justify-center text-start'>
                    <div className='mb-[20px] text-[20px] raleway'>{item.title}</div>
                    <div className='text-[14px] dm'>{item.content}</div>
                 </div>
