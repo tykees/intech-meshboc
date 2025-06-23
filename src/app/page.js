@@ -4,10 +4,12 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Hero from "./components/Hero/Hero";
 import Companies from "./components/Companies";
-import Courses from "./components/Courses";
-import Instructor from "./components/Instructor";
-import { EmblaCarousel } from "./components/EmblaCarousel";
 import Subscribe from "./components/Subscribe";
+import Project from "./components/Project";
+import Cohort from "./components/Cohort";
+import Bout from "./components/Bout";
+import Products from "./components/Products";
+import Designs from "./components/Designs";
 
 
 export default function Home() {
@@ -26,10 +28,12 @@ export default function Home() {
     <div>
      <UserButton afterSignOutUrl="/sign-in" />
      <Hero/>
+     <Cohort/>
      <Companies/>
-     <Courses/>
-     <Instructor/>
-     <EmblaCarousel/>
+     <Project/>
+     <Bout/>
+     <Products/>
+     <Designs/>
      <Subscribe/>
     </div>
   );

@@ -42,13 +42,13 @@ function Subscribe() {
   };
 
   return (
-    <div className="md:px-8">
+    <div className="">
       <div className="pt-20">
-        <div className="flex justify-around bg-primary items-start py-10 rounded-2xl md:h-[600px] h-[100%] flex-wrap shadow">
-          <div>
-            <p className="md:text-[80px] text-[30px] mt-12 text-start text-white leading-none font-bold raleway">
+        <div className="flex justify-around bg-primary items-start py-10 md:h-[600px] h-[100%] lg:flex-nowrap md:flex-wrap shadow">
+          <div className="">
+            <p className="md:text-[70px] text-[30px] mt-12 text-start text-white leading-none font-bold raleway">
               Subscribe for fresh <br />
-              <span className="md:text-[80px] text-[30px] font-bold">
+              <span className="md:text-[70px] text-[30px] font-bold">
                 content and updates
               </span>
             </p>

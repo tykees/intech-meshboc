@@ -28,9 +28,10 @@
 
 .links {
     text-decoration: none;
-    color: #000000;
+    color: #484848;
   /* color: #0f1b2a; */
   font-size: 14px;
+  font-weight: 400;
 }
 
 .links:hover {

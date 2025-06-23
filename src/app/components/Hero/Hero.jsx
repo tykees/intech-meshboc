@@ -9,40 +9,41 @@ function Hero() {
 
 
   return (
-    <div className='md:px-8'>
-        <div className='md:pt-20 pt-12'>
-            <div className='md:flex justify-around items-start py-10 bg-primary rounded-2xl h-[940px] md:h-[700px] p-4 flex-wrap shadow'>
+    <div className='pd:px-8'>
+        <div className='md:pt-[90px] pt-12'>
+            <div className='py-10 h-[940px] md:h-[700px] p-4 flex-wrap'>
               <div>
-              <p className='md:text-[95px] text-[40px] mt-12 text-start text-white leading-none font-bold raleway'>Learn. Build. <span className='text-secondary'> Succeed.</span> <br/> <span className='md:text-[33px] text-[13px] font-bold '>Hands-on Training | Expert Instructors | Job-Ready Skill</span></p>
-              <p className='md:w-[500px] w-[350px] text-start pt-5 block mt-1 text-white poppins'>Master in-demand tech skills and transform your career with Meshboc – your gateway to a thriving digital future.</p>
-              <div className='flex justify-start pt-5	 text-center md:gap-8 gap-4 mt-5'>
+              <p className='md:text-[75px] text-[40px] mt-[60px] text-center text-gray-800 font-normal tracking-wide leading-[50px] md:leading-[80px] raleway'>Tech <span className='font-bold bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 bg-clip-text text-transparent'>School</span> and Custom Software <br /> development <span className='font-bold bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 bg-clip-text text-transparent'>Company.</span></p>
+              <p className='text-center pt-1 block mt-1 text-gray-800 poppins'>Master in-demand tech skills and transform your career.</p>
+              <div className='flex justify-center pt-1	 text-center md:gap-8 gap-4 mt-5'>
                 {
                   user&&isLoaded?
                   <Link href={"/enrol"}><Button variant="outline"  className="text-secondary border border-secondary poppins w-[150px] h-[50px] hover:text-secondary">LEARN MORE</Button></Link>  :
-                  <Link href={"/sign-up"}><Button variant="outline"  className="text-secondary border border-secondary poppins w-[150px] h-[50px] hover:text-secondary">GET STARTED</Button></Link> 
+                  <Link href={"/sign-up"}><Button variant="outline"  className="text-white bg-gray-800 border border-gray-800 poppins w-[150px] h-[50px] hover:text-primary hover:border-primary">GET STARTED</Button></Link> 
                 }
-             <Link href={"/"}> <Button radius="full" variant="soft" className="text-primary w-[150px] h-[50px] poppins bg-secondary">REGISTER <span><Image className='bg-primary rounded-full p-2 ml-5' src={"/arrow.gif"} width={50} height={50} alt='img'></Image></span> </Button></Link>
+             <Link href={"/"}> <Button radius="full" variant="soft" className="text-primary w-[150px] h-[50px] poppins border-primary bg-transparent shadow-lg">REGISTER <span><Image className='bg-primary rounded-full p-2 ml-5' src={"/arrow.gif"} width={50} height={50} alt='img'></Image></span> </Button></Link>
               </div>
-              <div className='flex items-start md:gap-10 gap-5 pt-16 text-white'>
+            {/* sec 2 */}
+              <div className='flex justify-center items-center md:gap-[20px] gap-5 pt-16 text-gray-800'>
                   <div>
-                    <h2 className='md:text-[60px] text-[30px] text-center raleway'>100+</h2>
+                    <h2 className='md:text-[40px] text-[30px] text-center raleway'>100+</h2>
                     <p className='font-thin text-center poppins md:text-[16px] text-[9px]'>Happy Clients</p>
                   </div>
-                  <p className='md:text-[70px] text-[40px] font-thin'>|</p>
+                  <p className='md:text-[50px] text-[40px] font-thin'>|</p>
                   <div>
-                    <h2 className='md:text-[60px] text-[30px] text-center raleway'>100+</h2>
+                    <h2 className='md:text-[40px] text-[30px] text-center raleway'>100+</h2>
                     <p className='font-thin text-center poppins md:text-[16px] text-[9px]'>Grads</p>
                   </div>
-                  <p className='md:text-[70px] text-[40px] font-thin'>|</p>
+                  <p className='md:text-[50px] text-[40px] font-thin'>|</p>
 
                   <div>
-                    <h2 className='md:text-[60px] text-[30px] text-center raleway'>7+</h2>
+                    <h2 className='md:text-[40px] text-[30px] text-center raleway'>7+</h2>
                     <p className='font-thin text-center poppins md:text-[16px] text-[9px]'>Years Experience</p>
                   </div>
                 </div>
               </div>
-              <div>
-              <Image className='m-auto w-[600px] pt-[50px]' src="/homegirl2.png" width={500} height={500} alt='computer'/>
+              <div className="spinning_bg ml-[120px] pt-[150px] md:ml-[200px]">
+              <Image className='m-auto w-[300px] md:w-[350px] pt-[50px]' src="/roundb.png" width={350} height={350} alt='computer'/>
             </div>
             </div>
            

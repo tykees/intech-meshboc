@@ -8,6 +8,7 @@ import { toast } from 'sonner';
 import { useUser } from '@clerk/nextjs';
 import GlobalApi from '../_utils/GlobalApi';
 import Link from 'next/link';
+import { EmblaCarousel } from '../components/EmblaCarousel';
 
 
 const Page = () => {
@@ -126,6 +127,8 @@ const Page = () => {
                 </div>
             </div>  
        </div>
+                   <EmblaCarousel/>
+
     </div>
   )
 }
