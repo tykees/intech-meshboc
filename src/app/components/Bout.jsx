@@ -36,7 +36,7 @@ function Bout() {
             <p className='pt-[30px] text-[15px]'>We create software solutions that help startups find product-market fit, attract customers, impress investors, and scale successfully.</p>
         </div>
        </div>
-       <h3 className='text-center text-[40px] pt-[30px] my-[50px] text-gray-500'>Building startups isn't magic. It's cause and effect.</h3>
+       <h3 className='text-center text-[40px] pt-[30px] my-[50px] text-gray-500'>Building startups isn&apos;t magic. It&apos;s cause and effect.</h3>
     </div>
   )
 }
