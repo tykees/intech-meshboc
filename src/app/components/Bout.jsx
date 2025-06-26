@@ -13,7 +13,7 @@ function Bout() {
           <p className=' w-[280px] md:w-[600px] mt-[20px] text-gray-500 dm font-thin'>At Ginoid, we&apos;re passionate about delivering top-notch results and staying ahead in the ever-changing tech world. Our skilled team combines creativity with hands-on expertise to craft custom solutions that are designed to meet the unique needs of each client. We&apos;re not just about technology—we&apos;re about making it work for you.</p>
         </div>
         
-        <div className='col_2  bg-gray-100 w-[400px] h-[300px] p-[30px] '>
+        <div className='col_2  bg-gray-100 w-auto md:w-[400px] h-[300px] p-[30px] '>
             <div className='flex justify-start items-center '>
               <div className='flex justify-start gap-3 items-center'>
                 <div className='bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 text-white p-[15px] text-[20px] rounded-full'>
@@ -24,7 +24,7 @@ function Bout() {
             </div>
             <p className='pt-[30px] text-[15px]'>We create software solutions that help startups find product-market fit, attract customers, impress investors, and scale successfully.</p>
         </div>
-         <div className='col_2 bg-gray-100 w-[400px] h-[300px] p-[30px] '>
+         <div className='col_2 bg-gray-100 w-auto md:w-[400px] h-[300px] p-[30px] '>
             <div className='flex justify-start items-center '>
               <div className='flex justify-start gap-3 items-center'>
                 <div className='bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 text-white p-[15px] text-[20px] rounded-full'>

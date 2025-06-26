@@ -3,13 +3,13 @@ import { UserButton, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Hero from "./components/Hero/Hero";
-import Companies from "./components/Companies";
 import Subscribe from "./components/Subscribe";
 import Project from "./components/Project";
 import Cohort from "./components/Cohort";
 import Bout from "./components/Bout";
 import Products from "./components/Products";
 import Designs from "./components/Designs";
+import Whyus from "./components/Whyus";
 
 
 export default function Home() {
@@ -29,9 +29,9 @@ export default function Home() {
      <UserButton afterSignOutUrl="/sign-in" />
      <Hero/>
      <Cohort/>
-     <Companies/>
      <Project/>
      <Bout/>
+     <Whyus/>
      <Products/>
      <Designs/>
      <Subscribe/>

@@ -9,6 +9,7 @@ import { MdPermDeviceInformation } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
 import { GrArticle } from "react-icons/gr";
 import { Button } from "@/components/ui/button";
+import { FcIdea } from "react-icons/fc";
 import Image from 'next/image';
 import Link from 'next/link';
 import './navbar.css';
@@ -52,6 +53,7 @@ const Navbar = () => {
 
   return (
     <>
+    <div className='bg-black text-white text-center py-2 top_nav text-[14px] raleway flex justify-center items-center gap-1'> <div className='text-[20px]'><FcIdea /></div> <p> Bring your Business idea to life, now is the time to launch your idea.</p></div>
     <nav className="navbar border-b-2 border-gray-100">
       <div className="logo">
         <Link href={'/'} className="links w-[50px]">

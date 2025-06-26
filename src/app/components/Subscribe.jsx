@@ -44,20 +44,20 @@ function Subscribe() {
   return (
     <div className="">
       <div className="pt-20">
-        <div className="flex justify-around bg-primary items-start py-10 md:h-[600px] h-[100%] lg:flex-nowrap md:flex-wrap shadow">
+        <div className="flex justify-around border border-primary items-start py-10 md:h-[600px] h-[100%] lg:flex-nowrap flex-wrap shadow">
           <div className="">
-            <p className="md:text-[70px] text-[30px] mt-12 text-start text-white leading-none font-bold raleway">
+            <p className="md:text-[70px] text-[30px] mt-12 text-start text-black leading-none font-bold raleway">
               Subscribe for fresh <br />
               <span className="md:text-[70px] text-[30px] font-bold">
                 content and updates
               </span>
             </p>
-            <p className="md:w-[500px] w-[320px] text-start pt-5 block mt-5 text-white poppins">
+            <p className="md:w-[500px] w-[320px] text-start pt-5 block mt-5 text-gray-800 poppins">
             Stay updated with Intech Meshboc! Subscribe to get the latest tech training updates, career opportunities, and industry insights delivered straight to your inbox.
             </p>
             <div className="mt-10">
               <input
-                className="md:w-[600px] w-[320px] h-[62px] rounded-full px-5 text-black border-2 border-gray-300 focus:border-secondary outline-none"
+                className="md:w-[600px] w-[320px] h-[62px] rounded-full px-5 text-black border border-gray-800 focus:border-primary outline-none"
                 type="email"
                 placeholder="Enter Your Email"
                 value={email}
@@ -65,13 +65,13 @@ function Subscribe() {
               />
               <Button
                 variant="outline"
-                className="text-black ml-[-150px] bg-secondary border-secondary w-[150px] h-[60px]"
+                className="bg-black ml-[-150px] text-white w-[150px] h-[60px]"
                 onClick={handleSubscribe}
               >
                 Subscribe
               </Button>
             </div>
-            {error && <p className="text-yellow-300 mt-2">{error}</p>}
+            {error && <p className="text-yellow-800 mt-2">{error}</p>}
           </div>
           <div>
             <Image
