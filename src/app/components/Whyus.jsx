@@ -33,8 +33,8 @@ function Whyus() {
     <div className="py-10 px-4" >
          <div className="text-center">
         <p className="text-[35px] raleway">Why Us</p>
-        <p className="text-[14px] dm">
-          Transforming Visions into Reality with the Power of Product Engineering
+        <p className="text-[18px] dm">
+          What Makes Us a Trusted Partner
         </p>
         </div>
         <div className="grid w-fit mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

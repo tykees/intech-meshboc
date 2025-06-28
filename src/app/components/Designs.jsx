@@ -4,32 +4,32 @@ const services = [
   {
     title: "User Research and Usability",
     content:
-      "Complete software solutions from concept to deployment for tailored and efficient products",
+      "Gaining deep insight into user needs and behaviors to guide impactful product development.",
   },
   {
     title: "User Interface Design",
     content:
-      "Maximizing online presence and Developing dynamic web applications that offer engaging user experiences across devices.",
+      "Design visually compelling interfaces that elevate user interaction and deliver seamless digital experiences.",
   },
   {
     title: "User Experience Design",
     content:
-      "Crafting innovative mobile applications that cater to diverse platforms, enhancing user engagement and accessibility.",
+      "Designing smooth, intuitive interactions that connect users with digital products effortlessly.",
   },
   {
     title: "Concept Strategy and Design Sprint",
     content:
-      "Complete software solutions from concept to deployment for tailored and efficient products",
+      "Establish a strong foundation for successful digital products through strategic concept development and focused design sprints.",
   },
   {
     title: "Digital Prototyping",
     content:
-      "Complete software solutions from concept to deployment for tailored and efficient products",
+      "Bring ideas to life with interactive digital prototypes, enabling early exploration and validation of product features.",
   },
   {
     title: "Data Visualization",
     content:
-      "Complete software solutions from concept to deployment for tailored and efficient products",
+      "Convert complex data into clear, visually engaging representations that enhance insight and communication.",
   },
 ];
 

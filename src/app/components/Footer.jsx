@@ -17,7 +17,7 @@ function Footer() {
     <div className='py-20 bg-black'>
       {/* <div className='md:text-[60px] text-[28px] font-medium text-center text-slate-800 raleway'>WANNA BUILD AN IDEA? <br/> <span className='md:text-[250px] text-[55px]'> GET<span className='text-primary'>IN</span>TOUCH</span></div>
      <Link href={'tel:08105197239'}> <Button className="mx-auto block w-[250px] h-[60px] mb-20 text-white text-[20px]">Place a Call Now</Button></Link> */}
-        <div className='flex justify-around items-center flex-wrap mx-4'>
+        <div className='flex justify-between md:justify-around items-center flex-wrap mx-4'>
               <div>
                   <Image className='w-[120px]' src={"/meshbocw.png"} width={160} height={160} alt='logo'/>
                   <p className='w-[300px] text-[20px] pt-5 text-gray-50 raleway'>We teach the skills that builds the future.</p>

@@ -15,13 +15,13 @@ function Hero() {
               <div>
               <p className='md:text-[75px] text-[40px] mt-[60px] text-center text-gray-800 font-bold tracking-wide leading-[50px] md:leading-[80px] raleway'>We Build <span className='font-bold bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 bg-clip-text text-transparent'>Skills.</span> <br/>We Build <span className='font-bold bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 bg-clip-text text-transparent'> Softwares.</span></p>
               <p className='text-center pt-1 block mt-1 text-gray-800 poppins'>Master in-demand tech skills and transform your career.</p>
-              <div className='flex justify-center pt-1	 text-center md:gap-8 gap-4 mt-5'>
+              <div className='flex justify-center pt-1	 text-center md:gap-8 gap-4 mt-5 flex-wrap'>
                 {
                   user&&isLoaded?
-                  <Link href={"/enrol"}><Button variant="outline"  className="text-secondary border border-secondary poppins w-[150px] h-[50px] hover:text-secondary">LEARN MORE</Button></Link>  :
-                  <Link href={"/sign-up"}><Button variant="outline"  className="text-white bg-gray-800 border border-gray-800 poppins w-[150px] h-[50px] hover:text-primary hover:border-primary">GET STARTED</Button></Link> 
+                  <Link href={"/enrol"}><Button variant="outline"  className="text-secondary border border-secondary poppins w-[200px] h-[50px] hover:text-secondary">LEARN MORE</Button></Link>  :
+                  <Link href={"/sign-up"}><Button variant="outline"  className="text-white bg-gray-800 border border-gray-800 poppins w-[200px] h-[50px] hover:text-primary hover:border-primary">BUILD A SKILL</Button></Link> 
                 }
-             <Link href={"/"}> <Button radius="full" variant="soft" className="text-primary w-[150px] h-[50px] poppins border-primary bg-transparent shadow-lg">REGISTER <span><Image className='bg-primary rounded-full p-2 ml-5' src={"/arrow.gif"} width={50} height={50} alt='img'></Image></span> </Button></Link>
+             <Link href={"/contact"}> <Button radius="full" variant="soft" className="text-primary w-[200px] h-[50px] poppins border-primary bg-transparent shadow-lg">BUILD A START UP<span><Image className='bg-primary rounded-full p-2 ml-5' src={"/arrow.gif"} width={50} height={50} alt='img'></Image></span> </Button></Link>
               </div>
             {/* sec 2 */}
               <div className='flex justify-center items-center md:gap-[20px] gap-5 pt-16 text-gray-800'>
@@ -43,7 +43,7 @@ function Hero() {
                 </div>
               </div>
               <div className="spinning_bg ml-[120px] pt-[150px] md:ml-[200px]">
-              <Image className='m-auto w-[300px] md:w-[350px] pt-[50px]' src="/roundb.png" width={350} height={350} alt='computer'/>
+              <Image className='m-auto w-[200px] md:w-[350px] pt-[50px]' src="/roundb.png" width={350} height={350} alt='computer'/>
             </div>
             </div>
            

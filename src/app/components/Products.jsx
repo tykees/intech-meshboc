@@ -4,32 +4,32 @@ const services = [
   {
     title: "Full Cycle Software Development",
     content:
-      "Complete software solutions from concept to deployment for tailored and efficient products",
+      "End-to-end software solutions, from concept to launch, tailored for efficiency and impact.",
   },
   {
     title: "Web Apps and PWA",
     content:
-      "Maximizing online presence and Developing dynamic web applications that offer engaging user experiences across devices.",
+      "We craft dynamic web apps that elevate your online presence and engage users on every device.",
   },
   {
     title: "Mobile and Cross-Platform Apps",
     content:
-      "Crafting innovative mobile applications that cater to diverse platforms, enhancing user engagement and accessibility.",
+      "Building mobile apps that engage users and perform seamlessly across all platforms.",
   },
   {
     title: "Integrated Product, API and Data Platforms",
     content:
-      "Complete software solutions from concept to deployment for tailored and efficient products",
+      "Seamless products, APIs, and data systems designed to unify and optimize your tech ecosystem.",
   },
   {
     title: "Data Science and Analytics",
     content:
-      "Complete software solutions from concept to deployment for tailored and efficient products",
+      "Turning raw data into actionable insights through Data Science to accelerate business growth.",
   },
   {
     title: "Cloud and Dev Ops",
     content:
-      "Complete software solutions from concept to deployment for tailored and efficient products",
+      "Enhancing infrastructure with cloud and DevOps for secure, scalable, and efficient development.",
   },
 ];
 
@@ -38,8 +38,8 @@ function Products() {
     <div className="py-10 px-4">
       <div className="text-center">
         <p className="text-[35px] raleway">Product Engineering</p>
-        <p className="text-[14px] dm">
-          Transforming Visions into Reality with the Power of Product Engineering
+        <p className="text-[18px] dm">
+         Turning Ideas into Impact through Product Engineering
         </p>
       </div>
       <div className="mt-[30px]">

@@ -45,6 +45,7 @@ const Page = () => {
         
       };
   return (
+    <>
     <div className='pt-10 web_page pb-20 bg-primary text-center'>
             <div className='bg-white cour-border'>
           <h2 className='font-bold leading-tight pt-10 md:text-[80px] text-[40px] raleway'>Learn from the <span className='text-primary'>Professional</span><br/><span className=''>Developers</span></h2>
@@ -83,7 +84,7 @@ const Page = () => {
                     user&&isLoaded ?
                     <Button variant="outline" className="text-white w-[100%] mt-5 h-[50px] text-[20px] border-slate-400 rounded-2xl hover:bg-secondary" onClick={() => createUserCourse('Full-Stack Development_m')} >Make Payment</Button>
                     :
-                    <Link href={"/sign-up"}> <Button variant="outline" className="text-slate-400 w-[100%] mt-5 h-[50px] text-[20px] bg-secondary border-none rounded-2xl shadow hover:bg-white hover:text-black">Apply Now</Button> </Link>  
+                    <Link href={"/sign-up"}> <Button variant="outline" className="text-primary w-[100%] mt-5 h-[50px] text-[20px] bg-secondary border-none rounded-2xl shadow hover:bg-white hover:text-black">Apply Now</Button> </Link>  
                   }
                
                 </div>
@@ -127,9 +128,9 @@ const Page = () => {
                 </div>
             </div>  
        </div>
-                   <EmblaCarousel/>
-
     </div>
+     <EmblaCarousel/>
+    </>
   )
 }
 
