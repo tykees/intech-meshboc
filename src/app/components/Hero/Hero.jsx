@@ -11,7 +11,7 @@ function Hero() {
   return (
     <div className='pd:px-8'>
         <div className='md:pt-[90px] pt-12'>
-            <div className='py-10 h-[940px] md:h-[700px] p-4 flex-wrap'>
+            <div className='py-10 h-[730px] md:h-[700px] p-4 flex-wrap'>
               <div>
               <p className='md:text-[75px] text-[40px] mt-[60px] text-center text-gray-800 font-bold tracking-wide leading-[50px] md:leading-[80px] raleway'>We Build <span className='font-bold bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 bg-clip-text text-transparent'>Skills.</span> <br/>We Build <span className='font-bold bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 bg-clip-text text-transparent'> Softwares.</span></p>
               <p className='text-center pt-1 block mt-1 text-gray-800 poppins'>Master in-demand tech skills and transform your career.</p>

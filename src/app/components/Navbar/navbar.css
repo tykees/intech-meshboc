@@ -1,24 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 .top_nav {
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Higher than .navbar */
 }
 
 .navbar {
+  position: fixed;
+  top: 30px; /* Height of the .top_nav */
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  /* position: fixed; */
-  top: 5;
+  align-items: center;
+  padding: 0.5rem;
+  background: #fff;
+  z-index: 999; /* Just below .top_nav */
+  font-family: 'Poppins';
+  color: #120f0f;
+  border-bottom: 1px solid #eee;
+  padding-top: 20px;
+}
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
   width: 100%;
   align-items: center;
   padding: 0.5rem;
   color: #120f0f;
   font-family: 'Poppins';
   background: #fff;
-  /* background: #0f1b2a; */
+  background: #0f1b2a;
   z-index: 1;
-  /* border-bottom: 1px solid #fefefe; */
-}
+  border-bottom: 1px solid #fefefe;
+} */
 
 
 .mobile-menu {
@@ -172,6 +191,7 @@
     border: none;
     margin-bottom: 20px;
     cursor: pointer;
+    padding-top: 50px;
   }
   
   
