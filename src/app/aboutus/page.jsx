@@ -33,7 +33,7 @@ function Page() {
   {/* Centered Content */}
   <div className="relative z-10 flex items-center justify-center h-full px-8 text-left">
     <p className='w-auuto md:max-w-[700px] font-medium text-[18px] md:text-[25px] text-white raleway'>
-      "Intech Meshboc is a tech training platform dedicated to equipping aspiring developers with in-demand skills in frontend, backend, and full stack development. Through hands-on learning and real-world projects, we prepare students for successful careers in the tech industry. Join us and turn your passion for coding into a thriving profession!"
+      Intech Meshboc is a tech training platform dedicated to equipping aspiring developers with in-demand skills in frontend, backend, and full stack development. Through hands-on learning and real-world projects, we prepare students for successful careers in the tech industry. Join us and turn your passion for coding into a thriving profession!
       
           <p className='pt-[20px]'>Femi Michael - Tech Lead & Founder</p>
     </p>
