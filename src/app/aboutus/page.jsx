@@ -4,11 +4,11 @@ import Image from 'next/image';
 function Page() {
   return (
     <div className='pt-[100px]'>
-        <div className='relative group px-[200px] h-[350px] py-[50px] overflow-hidden bg-primary transition-colors shadow text-white text-start'>
+        <div className='relative group px-[20px] md:px-[200px] h-[350px] py-[50px] overflow-hidden bg-primary transition-colors shadow text-white text-start'>
           <div className="absolute inset-0 opacity-30 group-hover w-[600px] transition-opacity duration-300 pointer-events-none z-0 bg-[url('/grid.svg')] bg-cover"></div>
           <div className="relative">
           <h1 className='md:text-[80px] text-[35px] font-bold raleway text-white'>About Us!</h1>
-          <p className='w-[850px] font-medium text-[16px] text-gray-100 dm'> Intech Meshboc is a tech training platform dedicated to equipping aspiring developers with in-demand skills in frontend, backend, and full stack development. Through hands-on learning and real-world projects, we prepare students for successful careers in the tech industry. Join us and turn your passion for coding into a thriving profession!</p>
+          <p className='w-auto md:w-[850px] font-medium text-[16px] text-gray-100 dm'> Intech Meshboc is a tech training platform dedicated to equipping aspiring developers with in-demand skills in frontend, backend, and full stack development. Through hands-on learning and real-world projects, we prepare students for successful careers in the tech industry. Join us and turn your passion for coding into a thriving profession!</p>
         </div>
         </div>
         <div className='flex justify-center items-center mt-[100px] gap-10 flex-wrap'>
