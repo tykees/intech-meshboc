@@ -46,7 +46,7 @@ const Page = () => {
       };
   return (
     <>
-    <div className='pt-10 web_page pb-20 bg-primary text-center'>
+    <div className='pt-24 web_page pb-20 bg-primary text-center'>
             <div className='bg-white cour-border'>
           <h2 className='font-bold leading-tight pt-10 md:text-[80px] text-[40px] raleway'>Learn from the <span className='text-primary'>Professional</span><br/><span className=''>Developers</span></h2>
         <div className='flex justify-center items-center'>

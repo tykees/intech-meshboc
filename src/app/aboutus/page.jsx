@@ -49,7 +49,7 @@ Rooted in innovation, empowerment, and community, we set out to equip individual
 Today, we continue to grow — nurturing talent, launching ventures, and staying committed to transforming lives through technology.</p>
         </div>
         <div className='flex rounded-2xl py-10 justify-center'>
-        <Image className='w-[1250px]' src={'/dive.png'} width={1000} height={1000} alt='' />
+        <Image className='w-[1250px]' src={'/Dive.png'} width={1000} height={1000} alt='' />
         </div>
         {/* ... */}
         <div className='flex justify-center items-center flex-wrap'>
@@ -59,7 +59,7 @@ Today, we continue to grow — nurturing talent, launching ventures, and staying
 
   {/* Centered Content */}
   <div className="relative z-10 flex items-center justify-center h-full px-8 text-left">
-    <p className='w-auuto md:max-w-[700px] font-medium text-[18px] md:text-[25px] text-white raleway'>
+    <p className='w-auuto md:max-w-[700px] font-medium text-[18px] py-5 md:text-[25px] text-white raleway'>
      At IntechMeshboc, we empower minds through tech. We turn learners into creators, and creators into founders. This is where skills meet innovation — and startups begin.
       
           <p className='pt-[16px]'>Femi Michael - Tech Lead & Founder</p>
