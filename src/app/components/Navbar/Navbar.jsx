@@ -57,7 +57,7 @@ const Navbar = () => {
     <nav className="navbar border-b-2 border-gray-100">
       <div className="logo">
         <Link href={'/'} className="links w-[50px]">
-          <Image className='w-[120px]' src="/meshboc1.png" width={200} height={200} alt="" />
+          <Image className='w-[150px]' src="/blackwithname.png" width={200} height={200} alt="" />
         </Link>
       </div>
         {/* New fix */}

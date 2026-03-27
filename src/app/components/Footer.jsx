@@ -19,7 +19,7 @@ function Footer() {
      <Link href={'tel:08105197239'}> <Button className="mx-auto block w-[250px] h-[60px] mb-20 text-white text-[20px]">Place a Call Now</Button></Link> */}
         <div className='flex justify-between md:justify-around items-center flex-wrap mx-4'>
               <div>
-                  <Image className='w-[120px]' src={"/meshbocw.png"} width={160} height={160} alt='logo'/>
+                  <Image className='w-[150px]' src={"/bluewithname.png"} width={160} height={160} alt='logo'/>
                   <p className='w-[300px] text-[20px] pt-5 text-gray-50 raleway'>We teach the skills that builds the future.</p>
                   <div className='flex items-center text-white text-[20px] gap-4 mt-6'>
                  <a className='border border-gray-500 p-3 rounded-full' href='https://x.com/meshboc' target='_blank'><BsTwitterX /></a> 

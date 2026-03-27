@@ -16,7 +16,7 @@ function Bout() {
         <div className='col_2  bg-gray-100 w-auto md:w-[400px] h-[300px] p-[30px] '>
             <div className='flex justify-start items-center '>
               <div className='flex justify-start gap-3 items-center'>
-                <div className='bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 text-white p-[15px] text-[20px] rounded-full'>
+                <div className='bg-gradient-to-r from-blue-600 via-blue-600 to-lime-300 text-white p-[15px] text-[20px] rounded-full'>
                 <IoRocketSharp />
                 </div>
               <p>START STRONG <br/> GROW FAST</p>
@@ -27,7 +27,7 @@ function Bout() {
          <div className='col_2 bg-gray-100 w-auto md:w-[400px] h-[300px] p-[30px] '>
             <div className='flex justify-start items-center '>
               <div className='flex justify-start gap-3 items-center'>
-                <div className='bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 text-white p-[15px] text-[20px] rounded-full'>
+                <div className='bg-gradient-to-r from-blue-600 via-blue-600 to-lime-300 text-white p-[15px] text-[20px] rounded-full'>
                 <IoRocketSharp />
                 </div>
               <p>START STRONG <br/> GROW FAST</p>

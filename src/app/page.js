@@ -28,7 +28,6 @@ export default function Home() {
     <div>
      <UserButton afterSignOutUrl="/sign-in" />
      <Hero/>
-     <Cohort/>
      <Project/>
      <Bout/>
      <Whyus/>

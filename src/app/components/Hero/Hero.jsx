@@ -13,7 +13,7 @@ function Hero() {
         <div className='md:pt-[90px] pt-12'>
             <div className='py-10 h-[730px] md:h-[700px] p-4 flex-wrap'>
               <div>
-              <p className='md:text-[75px] text-[40px] mt-[60px] text-center text-gray-800 font-bold tracking-wide leading-[50px] md:leading-[80px] raleway'>We Build <span className='font-bold bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 bg-clip-text text-transparent'>Skills.</span> <br/>We Build <span className='font-bold bg-gradient-to-r from-purple-600 via-purple-600 to-lime-300 bg-clip-text text-transparent'> Softwares.</span></p>
+              <p className='md:text-[75px] text-[40px] mt-[60px] text-center text-gray-800 font-bold tracking-wide leading-[50px] md:leading-[80px] raleway'>We Build <span className='font-bold bg-gradient-to-r from-blue-600 via-blue-600 to-lime-300 bg-clip-text text-transparent'>Skills.</span> <br/>We Build <span className='font-bold bg-gradient-to-r from-blue-600 via-blue-600 to-lime-300 bg-clip-text text-transparent'> Softwares.</span></p>
               <p className='text-center pt-1 block mt-1 text-gray-800 poppins'>Master in-demand tech skills and transform your career.</p>
               <div className='flex justify-center pt-1	 text-center md:gap-8 gap-4 mt-5 flex-wrap'>
                 {
@@ -42,9 +42,9 @@ function Hero() {
                   </div>
                 </div>
               </div>
-              <div className="spinning_bg ml-[120px] pt-[150px] md:ml-[200px]">
+              {/* <div className="spinning_bg ml-[120px] pt-[150px] md:ml-[200px]">
               <Image className='m-auto w-[200px] md:w-[350px] pt-[50px]' src="/roundb.png" width={350} height={350} alt='computer'/>
-            </div>
+            </div> */}
             </div>
            
         </div>
