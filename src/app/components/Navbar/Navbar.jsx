@@ -14,6 +14,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './navbar.css';
 import { UserButton, useUser } from '@clerk/nextjs';
+import Logo from '../../../../public/blackwithname.png';
 
 
 
@@ -57,7 +58,7 @@ const Navbar = () => {
     <nav className="navbar border-b-2 border-gray-100">
       <div className="logo">
         <Link href={'/'} className="links w-[50px]">
-          <Image className='w-[150px]' src="/blackwithname.png" width={200} height={200} alt="" />
+          <Image className='w-[150px]' src={Logo} width={200} height={200} alt="" />
         </Link>
       </div>
         {/* New fix */}
