@@ -1,47 +1,54 @@
 import React from 'react';
 import Image from 'next/image';
-import { LuMailCheck } from "react-icons/lu";
+import { LuMailCheck, LuHeadphones, LuPhone, LuCode2 } from "react-icons/lu";
 import { TiLocationOutline } from "react-icons/ti";
-import { LuPhone } from "react-icons/lu";
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 
 function Page() {
   return (
-    <div className='mt-20'>
+    <div className='mt-20 pb-24'>
         <h1 className='text-center text-[36px] px-10 font-bold raleway'>Get In Touch with Our Team</h1>
-        <p className='text-center text-slate-600 poppins'>We have a team of Developers that can build your ideas and get your a 10x result</p>
-        <div className='flex justify-center'>
-            <Image src={'/mp.png'} width={600} height={600} alt='img'/>
+        <p className='text-center text-slate-500 poppins mt-2'>We have a team of Developers that can build your ideas and get you a 10x result</p>
+        <div className='flex justify-center my-4'>
+            <Image src={'/mp.png'} width={500} height={500} alt='contact illustration'/>
         </div>
-        <div className='flex justify-center gap-14 items-center flex-wrap'>
-            <div className='border w-[250px] h-[240px] p-4 shadow-md hover:shadow-xl rounded-lg'>
-            <div className='text-[30px]'><LuMailCheck /></div>
-            <p className='mt-8 text-[20px] font-bold raleway'>Chat with Devs</p>
-            <p className='my-3 poppins'>Chat with our friendly Devs</p>
-            <Button className="text-white rounded-lg bg-slate-500 hover:bg-secondary hover:text-black w-[100%]"><a href="mailto:office@intechmeshboc.com">office@intechmeshboc.com</a></Button>
+        <div className='flex justify-center gap-6 items-stretch flex-wrap px-4'>
+            <div className='border w-[250px] p-6 shadow-md hover:shadow-xl rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col'>
+              <div className='text-[28px] text-primary'><LuCode2 /></div>
+              <p className='mt-6 text-[18px] font-bold raleway'>Chat with Devs</p>
+              <p className='my-3 poppins text-[14px] text-slate-500'>Chat with our friendly developers</p>
+              <Button className="text-white rounded-lg bg-primary hover:bg-primary/90 w-full mt-auto">
+                <a href="mailto:office@meshboc.cc">office@meshboc.cc</a>
+              </Button>
             </div>
 
-            <div className='border w-[250px] h-[240px] p-4 shadow-md hover:shadow-xl rounded-lg'>
-            <div className='text-[30px]'><LuMailCheck /></div>
-            <p className='mt-8 text-[20px] font-bold raleway'>Chat with Support</p>
-            <p className='my-3 poppins'>Chat with our Support</p>
-            <Button className="text-white rounded-lg bg-slate-500 hover:bg-primary w-[100%]"> <a href="mailto:office@intechmeshboc.com">office@intechmeshboc.com</a></Button>
+            <div className='border w-[250px] p-6 shadow-md hover:shadow-xl rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col'>
+              <div className='text-[28px] text-primary'><LuHeadphones /></div>
+              <p className='mt-6 text-[18px] font-bold raleway'>Chat with Support</p>
+              <p className='my-3 poppins text-[14px] text-slate-500'>Chat with our support team</p>
+              <Button className="text-white rounded-lg bg-primary hover:bg-primary/90 w-full mt-auto">
+                <a href="mailto:office@meshboc.cc">office@meshboc.cc</a>
+              </Button>
             </div>
 
-            <div className='border w-[250px] h-[240px] p-4 shadow-md hover:shadow-xl rounded-lg'>
-            <div className='text-[30px]'><TiLocationOutline /></div>
-            <p className='mt-8 text-[20px] font-bold raleway'>Visit Us</p>
-            <p className='my-3 poppins'>Visit our friendly team</p>
-           <Link href={'https://maps.app.goo.gl/uRVpocwDwkK1wHLs7'}> <Button className="text-white rounded-lg bg-slate-500 hover:bg-primary w-[100%]">Locate on Google</Button></Link>
+            <div className='border w-[250px] p-6 shadow-md hover:shadow-xl rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col'>
+              <div className='text-[28px] text-primary'><TiLocationOutline /></div>
+              <p className='mt-6 text-[18px] font-bold raleway'>Visit Us</p>
+              <p className='my-3 poppins text-[14px] text-slate-500'>Come meet our friendly team</p>
+              <Link href={'https://maps.app.goo.gl/uRVpocwDwkK1wHLs7'} className='mt-auto'>
+                <Button className="text-white rounded-lg bg-primary hover:bg-primary/90 w-full">Locate on Google</Button>
+              </Link>
             </div>
 
-            <div className='border w-[250px] h-[240px] p-4 shadow-md hover:shadow-xl rounded-lg'>
-            <div className='text-[30px]'><LuPhone /></div>
-            <p className='mt-8 text-[20px] font-bold raleway'>Call Us</p>
-            <p className='my-3 poppins'>Speak with our team</p>
-           <Link href={'tel:+2348105197239'}> <Button className="text-white rounded-lg bg-slate-500 hover:bg-secondary hover:text-black w-[100%]">+2348105197239</Button></Link>
+            <div className='border w-[250px] p-6 shadow-md hover:shadow-xl rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col'>
+              <div className='text-[28px] text-primary'><LuPhone /></div>
+              <p className='mt-6 text-[18px] font-bold raleway'>Call Us</p>
+              <p className='my-3 poppins text-[14px] text-slate-500'>Speak directly with our team</p>
+              <Link href={'tel:+2348105197239'} className='mt-auto'>
+                <Button className="text-white rounded-lg bg-primary hover:bg-primary/90 w-full">+234 810 519 7239</Button>
+              </Link>
             </div>
         </div>
     </div>
